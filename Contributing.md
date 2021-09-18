@@ -1,5 +1,7 @@
 # Principles
 
+Note: this page is still under construction; everything in the Wiki is subject to change.
+
 ## Commenting
 Since this project will be passed on to different students every year, it is important to include comments so that anyone, including someone who is brand new to the project team, can understand quickly what the code is for. It is not necessary to comment every single line, but please try to “chunk” the code and include comments for every chunk.
 
@@ -22,7 +24,7 @@ Examples of good branch names:
 ## Merging
 For the most part, student developers should always merge into the branch `dev`. Any merges into `main` will only be from `dev`, and will be done after a confirmation from Professor Bram. As a student developer, it is important that you resolve any conflicts in `dev` before requesting to merge into main.
 
-# Setting up the Repository and IntelliJ
+# Student Developer Setup Guide
 
 ## Forking the Repository
 The first thing that you will want to do is fork the main Legup repository. Press the "Fork" button on the top right side of the page. Once you have created your own fork, navigate to it, click the green "Code" button, then press the clipboard to copy your repository's link.
