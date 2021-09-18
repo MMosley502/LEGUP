@@ -1,4 +1,4 @@
-# Contributing to Legup
+# Setting up the Repository and IntelliJ
 
 ## Forking the Repository
 The first thing that you will want to do is fork the main Legup repository. Press the "Fork" button on the top right side of the page. Once you have created your own fork, navigate to it, click the green "Code" button, then press the clipboard to copy your repository's link.
