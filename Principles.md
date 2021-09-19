@@ -18,4 +18,4 @@ Examples of good branch names:
 	`nurikabe-puzzle-check`
 
 ## Merging
-For the most part, student developers should always merge into the branch `dev`. Any merges into `master` will only be from `dev`, and will be done after a confirmation from Dr. van Heuveln. As a student developer, it is important that you resolve any conflicts in `dev` before requesting to merge into main.
+For the most part, student developers should always merge into the branch `dev`. Any merges into `master` will only be from `dev`, and will be done after a confirmation from Dr. van Heuveln. As a student developer, it is important that you resolve any conflicts in `dev` before requesting to merge into `master`.
