@@ -42,3 +42,6 @@ The next step is to push your changes. Press the push button. Like before, you w
 
 ### Pull Requests
 The final step is to open a pull request to merge the code from your repository into the main repository (NOTE: you can make multiple commits to your forked repo before opening a pull request, this step does not have to immediately follow the previous one). Open your forked version on GitHub and then press "Pull requests", followed by"New pull request", and then "Create pull request". Create a title for your request as well as a description of the changes. Finally, press "Create pull request". Pull requests must be approved by another maintainer in order to be merged, so all you need to do now is wait for somebody else to approve and then merge your request.
+
+# Setup Guide Using the Terminal/Command Line
+CURRENTLY UNDER CONSTRUCTION
