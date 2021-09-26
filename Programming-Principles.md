@@ -4,8 +4,7 @@ Since this project will be passed on to different students every year, it is imp
 ## Documenting and Reporting Issues
 Please use GitHub Issues to note any bugs or problems that may occur. If you want to document issues in a separate Google Doc or Word document for yourself, that is fine. However, in order to help foster a collaborative and efficient workspace, it is best if we report issues on GitHub issues so that team members can have a quick overview of what is fixed, what is being fixed, and what needs to be fixed at all times.
 
-Please follow the following template for reporting GitHub issues:
->>INSERT IMAGE HERE<<
+**Please include the current behavior, expected behavior, and any steps to reproduce the bug in your issue.**
 
 ## Creating Branches
 Please do not include your name in branch names. Including your name in the branch might make it seem like that everything that is being done in that branch is off limits to everyone else, which goes against the collaborative environment we are trying to create.
