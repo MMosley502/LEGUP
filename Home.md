@@ -8,7 +8,7 @@ Logic Engine for Grid-Using Puzzles (LEGUP), a project by Dr. van Heuveln, is a 
 ## Goal
 The main goal of the LEGUP project is to provide a better interface for students to learn basic principles of logical reasoning. 
 
-Dr. van Heuveln has taught logic courses on a frequent basis for the past 15 years, and noted that a good number of students struggle with the systems of modern formal logic that were developed in the late 1800's and early 1900's, and that have been universally used in logic courses since. These traditional systems use abstract linear symbol strings such as (P & Q) -> (R v S), and deploy even more abstract rules such as & Elim to infer new symbol strings from old ones, thus engaging the edu.rpi.legup.user in logical reasoning. 
+Dr. van Heuveln has taught logic courses on a frequent basis for the past 15 years, and noted that a good number of students struggle with the systems of modern formal logic that were developed in the late 1800's and early 1900's, and that have been universally used in logic courses since. These traditional systems use abstract linear symbol strings such as (P ∧ Q) → (R ∨ S), and deploy even more abstract rules such as & Elim to infer new symbol strings from old ones, thus engaging the `edu.rpi.legup.user` in logical reasoning. 
 
 This project brings about the idea that there are more pedagogically effective ways for students to learn the basic and important principles of logical reasoning. 
 
