@@ -45,4 +45,4 @@ The final step is to open a pull request to merge the code from your repository 
 
 
 # Setup Guide Using the Terminal/Command Line
-CURRENTLY UNDER CONSTRUCTION
+LEGUP uses Gradle to manage its build process. A wrapper script, `gradlew`, is included at the root of the repository. It *should* be executable by default, but if it isn't (*e.g.*, you get a "permission denied" error with one of the subsequent steps), then you'll need to run `chmod +x gradlew`. To build the entire project, just run `./gradlew jar`. This will build a `Legup.jar` file in the `build/libs` subdirectory. Open that file to run LEGUP. If you want to run LEGUP "in-place" (*e.g.*, for debugging), then run `./gradlew run` instead. This will automatically launch LEGUP, but a dedicated `.jar` executable will **not** be created.
