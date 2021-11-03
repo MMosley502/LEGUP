@@ -1,6 +1,6 @@
 Welcome to the LEGUP wiki!
 
-Note: this Wiki is still under construction; everything is subject to change.
+For the most recent releases of Legup, please click [here](https://github.com/Bram-Hub/Legup/releases).
 
 ## What is LEGUP?
 Logic Engine for Grid-Using Puzzles (LEGUP), a project by Dr. van Heuveln, is a better way to learn formal logic.
