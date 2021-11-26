@@ -7,17 +7,15 @@ Please use GitHub Issues to note any bugs or problems that may occur. If you wan
 **Please include the current behavior, expected behavior, and any steps to reproduce the bug in your issue.**
 
 ## Creating Branches
-Please do not include your name in branch names. Including your name in the branch might make it seem like that everything that is being done in that branch is off limits to everyone else, which goes against the collaborative environment we are trying to create.
-
-All branches should follow the following format: `puzzle-issue00-descriptive_name`. If an issue number is included, it should always refer to the respective issue on Legup's [GitHub Issues page](https://github.com/Bram-Hub/Legup/issues). Always create a new branch if you are tackling a new problem so that only one task is being done on a single branch at all times. This will make it easier to debug code and figure out where issues stem from.
-
-Examples of bad branch names:
-	`johnny-appleseed`
-	`mike-sudoku-algorithm-fix`
+All branches should follow the following format: `puzzle-issue00-descriptive_name`. If an issue number is included, it should always refer to the respective issue on Legup's [GitHub Issues page](https://github.com/Bram-Hub/Legup/issues). Always create a new branch if you are tackling a new problem so that only one task is being done on a single branch at all times. This will make it easier to debug code and figure out where issues stem from. Please stray away from including your name in your branches.
 
 Examples of good branch names:
 	`sudoku-issue12-fix_terrible_bug`
 	`nurikabe-new_feature`
+
+Examples of bad branch names:
+	`johnny-appleseed`
+	`mike-sudoku-algorithm-fix`
 
 ## Merging
 For the most part, student developers should always merge into the branch `dev`. Any merges into `master` will only be from `dev`, and will be done after given approval from Dr. van Heuveln. As a student developer, it is important that you resolve any conflicts in `dev` before requesting to merge into `master`.
