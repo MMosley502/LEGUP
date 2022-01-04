@@ -7,11 +7,17 @@ Setting up the software is quite easy.
 And that's it! But if you're still reading this, that means you probably ran into some problems...
 
 If you're using a Windows computer, refer to [this troubleshooting guide](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows).
-If you're using Mac, refer to the troubleshooting guide here.
+
+If you're using Mac, refer to [this troubleshooting guide](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-macos).
+
 Note: both setup guides assume that you have already downloaded the `Legup.jar` file.
 
 # Troubleshooting on Windows
 While the screenshots provided were taken on a laptop running Windows 10, these instructions should still work on Windows 7 and Windows 8 machines.
+
+## Common Issues
+Legup jar file defaults to Internet Explorer (or another application)
+Java is not installed
 
 ### Legup jar file defaults to Internet Explorer (or another application)
 1. Right click the `Legup.jar` file. A menu should pop up, and you should see an option that reads `Open with...`. (See image below for clarification.)
