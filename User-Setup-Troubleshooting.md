@@ -28,4 +28,5 @@ Below is a sample screenshot of the error message that would appear if Java is n
 
 ![](https://i.ibb.co/hm5H6Yf/image.png)
 
-3. If Java is not installed, go to https://java.com/en/download/ and download JDK for either Linux, macOS, or Windows. Follow the installation guide, and once that is done, you should be able to open the `Legup.jar` file without problems.
+3. If Java is not installed, go to https://java.com/en/download/ and follow the instructions on the website. O
+nce that is done, you should be able to open the `Legup.jar` file without problems.
