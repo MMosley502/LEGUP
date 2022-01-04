@@ -16,19 +16,13 @@ Note: both setup guides assume that you have already downloaded the `Legup.jar` 
 While the screenshots provided were taken on a laptop running Windows 10, these instructions should still work on Windows 7 and Windows 8 machines.
 
 ## Common Issues
-Legup jar file defaults to Internet Explorer (or another application)
-Java is not installed
+[Java is not installed](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide/_edit#java-is-not-installed)
 
-### Legup jar file defaults to Internet Explorer (or another application)
-1. Right click the `Legup.jar` file. A menu should pop up, and you should see an option that reads `Open with...`. (See image below for clarification.)
-
-<img src="https://i.ibb.co/k9K1h0h/image.png" width="400">
-
-2. On the subsequent window that pops up, select to open the file through Open JDK Platform. If you do not see the Open JDK Platform option, you most likely do not have Java installed. Please refer to the "Java not installed" section.
-
-<img src="https://i.ibb.co/k4wvvyb/image.png" width="400">
+[Legup jar file defaults to Internet Explorer (or another application)](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#legup-jar-file-defaults-to-internet-explorer-or-another-application)
 
 ### Java is not installed
+If you are absolutely sure that Java is not installed, you can skip straight to the last step, which contains [the link to install Java](https://java.com/en/download/). If you're not 100% sure, you can start from the first step to verify whether or not Java is installed.
+
 1. Click on the Windows button `⊞ Win` to bring up the start menu. Search up for the application called Command Prompt and open it. The window that comes up should look something like this:
 
 <img src="https://i.ibb.co/WgnvQyh/image.png" width="600">
@@ -48,6 +42,15 @@ Below is a sample screenshot of the error message that would appear if Java is n
 <img src="https://i.ibb.co/hm5H6Yf/image.png" width="600">
 
 3. If Java is not installed, go to https://java.com/en/download/ and follow the instructions on the website. Once that is done, you should be able to open the `Legup.jar` file without problems.
+
+### Legup jar file defaults to Internet Explorer (or another application)
+1. Right click the `Legup.jar` file. A menu should pop up, and you should see an option that reads `Open with...`. (See image below for clarification.)
+
+<img src="https://i.ibb.co/k9K1h0h/image.png" width="400">
+
+2. On the subsequent window that pops up, select to open the file through Open JDK Platform. If you do not see the Open JDK Platform option, you most likely do not have Java installed. Please refer to the "Java not installed" section.
+
+<img src="https://i.ibb.co/k4wvvyb/image.png" width="400">
 
 # Troubleshooting on macOS
 Under construction
