@@ -1,7 +1,12 @@
 # Setting up the Software
 Setting up the software is quite easy.
 
+### For Windows and Linux users:
 1. Download the `Legup.jar` file from LMS.
+2. Double click on the file to run it.
+
+### For macOS users:
+1. Download the zipped folder containing Legup from LMS. It should be named something like Legup_macOS.zip
 2. Double click on the file to run it.
 
 And that's it! But if you're still reading this, that means you probably ran into some problems...
