@@ -6,7 +6,7 @@ Setting up the software is quite easy.
 
 And that's it! But if you're still reading this, that means you probably ran into some problems...
 
-If you're using a Windows computer, refer to the troubleshooting guide here.
+If you're using a Windows computer, refer to [this troubleshooting guide](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows).
 If you're using Mac, refer to the troubleshooting guide here.
 Note: both setup guides assume that you have already downloaded the `Legup.jar` file.
 
