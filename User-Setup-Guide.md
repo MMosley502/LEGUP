@@ -1,4 +1,17 @@
-This setup guide assumes that you have already downloaded the `Legup.jar` file.
+# Setting up the Software
+Setting up the software is quite easy.
+
+1. Download the `Legup.jar` file from LMS.
+2. Double click on the file to run it.
+
+And that's it! But if you're still reading this, that means you probably ran into some problems...
+
+If you're using a Windows computer, refer to the troubleshooting guide here.
+If you're using Mac, refer to the troubleshooting guide here.
+Note: both setup guides assume that you have already downloaded the `Legup.jar` file.
+
+# Troubleshooting on Windows
+While the screenshots provided were taken on a laptop running Windows 10, these instructions should still work on Windows 7 and Windows 8 machines.
 
 ### Legup jar file defaults to Internet Explorer (or another application)
 1. Right click the `Legup.jar` file. A menu should pop up, and you should see an option that reads `Open with...`. (See image below for clarification.)
@@ -28,5 +41,7 @@ Below is a sample screenshot of the error message that would appear if Java is n
 
 <img src="https://i.ibb.co/hm5H6Yf/image.png" width="600">
 
-3. If Java is not installed, go to https://java.com/en/download/ and follow the instructions on the website. O
-nce that is done, you should be able to open the `Legup.jar` file without problems.
+3. If Java is not installed, go to https://java.com/en/download/ and follow the instructions on the website. Once that is done, you should be able to open the `Legup.jar` file without problems.
+
+# Troubleshooting on macOS
+Under construction
