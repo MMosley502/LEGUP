@@ -6,10 +6,11 @@ Setting up the software is quite easy.
 2. Double click on the file to run it.
 
 ### For macOS users:
-1. Download the zipped folder containing Legup from LMS. It should be named something like Legup_macOS.zip
+1. Download the zipped folder containing Legup from LMS. It should be named something like `Legup_macOS.zip`.
+2. Unzip the folder and navigate to the `Legup.app` file. It should be in a folder called `__MACOSX`.
 2. Double click on the file to run it.
 
-And that's it! But if you're still reading this, that means you probably ran into some problems...
+And that's it! But if you're still reading this, that means you probably ran into some problems. There are two troubleshooting guides: one for Windows and one for macOS.
 
 If you're using a Windows computer, refer to [this troubleshooting guide](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows).
 
