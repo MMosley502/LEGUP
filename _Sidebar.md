@@ -1,6 +1,6 @@
 # Legup Wiki
 * [Home][home]
-* For Developers
+* [For Developers][dev]
     * [Programming Principles][principles]
     * [Developer Setup Guide][dev_setup]
 * For End Users
@@ -10,6 +10,7 @@
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
 [principles]: https://github.com/Bram-Hub/Legup/wiki/Programming-Principles
+[dev]: https://github.com/Bram-Hub/Legup/wiki/For-Developers
 [dev_setup]: https://github.com/Bram-Hub/Legup/wiki/Programming-Setup-Guide
 [user_setup]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide
 [windows_troubleshooting]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows
