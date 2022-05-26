@@ -5,8 +5,8 @@
     * [Developer Setup Guide][dev_setup]
 * For End Users
     * [User Setup Guide][user_setup]
-    * [Troubleshooting on Windows][windows_troubleshooting]
-    * [Troubleshooting on macOS][macos_troubleshooting]
+        * [Troubleshooting on Windows][windows_troubleshooting]
+        * [Troubleshooting on macOS][macos_troubleshooting]
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
 [principles]: https://github.com/Bram-Hub/Legup/wiki/Programming-Principles
