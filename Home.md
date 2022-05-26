@@ -1,9 +1,9 @@
-Welcome to the LEGUP wiki!
+Welcome to the Legup Wiki!
 
 For the most recent releases of Legup, please click [here](https://github.com/Bram-Hub/Legup/releases).
 
 ## What is LEGUP?
-Logic Engine for Grid-Using Puzzles (LEGUP), a project by Dr. van Heuveln, is a better way to learn formal logic.
+Logic Engine for Grid-Using Puzzles (Legup), a project by Dr. van Heuveln, is a better way to learn formal logic.
 
 ## Goal
 The main goal of the LEGUP project is to provide a better interface for students to learn basic principles of logical reasoning. 
