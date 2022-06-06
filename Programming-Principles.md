@@ -17,5 +17,7 @@ Examples of bad branch names:
 	`johnny-appleseed`
 	`mike-sudoku-algorithm-fix`
 
+**If you are a student developer and you need to create a new branch, you should branch off of `dev`, NOT `master`.**
+
 ## Merging
 For the most part, student developers should always merge into the branch `dev`. Any merges into `master` will only be from `dev`, and will be done after given approval from Dr. van Heuveln. As a student developer, it is important that you resolve any conflicts in `dev` before requesting to merge into `master`.
