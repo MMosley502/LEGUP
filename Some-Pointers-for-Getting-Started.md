@@ -43,7 +43,7 @@ The board is the grid that is manipulated for the puzzle. While a board class wi
 ### The Rules
 There are 3 types of rules: basic rules, contradiction rules, and case rules. Basic rules are just "A leads to B because of X rule". Contradiction rules are just "A is invalid because of X contradiction". Case rules branch off multiple possibilities. For example, in Nurikabe, each cell can be black or white. Therefore, the Black or White case rule will create 2 branches: one where the selected cell is black and one where the selected cell is white.
 
-The implementation of each rule will require you to look at the information on the board and interpret it.
+Each rule has its own corresponding ID, which can be found within the class or within a text file called `puzzlename_reference_sheet.txt` in the corresponding `rules` package. The implementation of each rule will require you to look at the information on the board and interpret it.
 
 ### Importer and Exporter
 The importer imports data from a proof/puzzle file. The exporter saves a proof to a proof file. When you open file, you use the importer. When you save a file, you use the exporter.
