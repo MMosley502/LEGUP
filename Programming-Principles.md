@@ -1,13 +1,17 @@
 ## Commenting
 Since this project will be passed on to different students every year, it is important to include comments so that anyone, including someone who is brand new to the project team, can understand quickly what the code is for. It is not necessary to comment every single line, but please try to “chunk” the code and include comments for every chunk.
 
-## Documenting and Reporting Issues
-Please use GitHub Issues to note any bugs or problems that may occur. If you want to document issues in a separate Google Doc or Word document for yourself, that is fine. However, in order to help foster a collaborative and efficient workspace, it is best if we report issues on GitHub issues so that team members can have a quick overview of what is fixed, what is being fixed, and what needs to be fixed at all times.
+## Issues
+### Creating and Reporting Issues
+If you see an issue, double check if it has already been documented. If the issue has not already been document, please open a new issue and give it the appropriate labels. 
 
-**Please include the current behavior, expected behavior, and any steps to reproduce the bug in your issue.**
+If the issue is a bug that needs to be fixed, **please include the current behavior, expected behavior, and any steps needed to reproduce the bug in your issue.** If possible, including a video of how to reproduce the issue would be preferred. Please refer to [this issue](https://github.com/Bram-Hub/Legup/issues/97) as an example for reporting bugs.
+
+### Solving an Issue
+If you are working on an issue, please assign it to yourself and create a branch for that issue (remember to create the branch off of `dev`). Anyone is free to solve any issue, and we encourage people to collaborate on issues together.
 
 ## Creating Branches
-All branches should follow the following format: `puzzle-issue00-descriptive_name`. If an issue number is included, it should always refer to the respective issue on Legup's [GitHub Issues page](https://github.com/Bram-Hub/Legup/issues). Always create a new branch if you are tackling a new problem so that only one task is being done on a single branch at all times. This will make it easier to debug code and figure out where issues stem from. Please stray away from including your name in your branches.
+**If you need to create a new branch, you should branch off of `dev`, NOT `master`.** All branches should follow the following format: `puzzle-issue00-descriptive_name` (note that if the branch is solving a general problem and not a problem related to a specific puzzle, the first part can be omitted). If an issue number is included, it should always refer to the respective issue on [Legup's GitHub Issues page](https://github.com/Bram-Hub/Legup/issues). Always create a new branch if you are tackling a new problem so that only one task is being done on a single branch at all times. This will make it easier to debug code and figure out where issues stem from. Please stray away from including your name in your branches.
 
 Examples of good branch names:
 	`sudoku-issue12-fix_terrible_bug`
@@ -17,7 +21,7 @@ Examples of bad branch names:
 	`johnny-appleseed`
 	`mike-sudoku-algorithm-fix`
 
-**If you are a student developer and you need to create a new branch, you should branch off of `dev`, NOT `master`.**
+## Pull Requests and Merging
+For the most part, developers should always merge into the branch `dev`. Any merges into `master` will only be from `dev`, and will be done after given approval from Dr. van Heuveln. As a developer, it is important that you resolve any conflicts in `dev` before requesting to merge into `master`.
 
-## Merging
-For the most part, student developers should always merge into the branch `dev`. Any merges into `master` will only be from `dev`, and will be done after given approval from Dr. van Heuveln. As a student developer, it is important that you resolve any conflicts in `dev` before requesting to merge into `master`.
+Please document what changes are being made in a particular pull request. If applicable, please remember to link the pull request to a GitHub issue.
