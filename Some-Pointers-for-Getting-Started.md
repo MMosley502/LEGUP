@@ -1,6 +1,6 @@
 **Note: if you are reading this and have not followed the [developer setup guide](https://github.com/Bram-Hub/Legup/wiki/Programming-Setup-Guide) yet, please do that first.**
 
-The Legup repository can be daunting at first glance. While this is by no means comprehensive documentation of Legup (that is something we will hopefully be working on soon), this is a good place to start:
+The Legup repository can be daunting at first glance. Here is some general starting information as well as some basics on how to navigate the repository:
 
 ## Puzzle Status
 ### Fully Functioning
