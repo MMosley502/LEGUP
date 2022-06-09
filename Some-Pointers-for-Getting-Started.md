@@ -15,6 +15,7 @@ These are the puzzles that are currently actively being developed for Legup. The
 * Tree Tent
 #### Just started
 * Battleship
+* Skyscrapers
 
 While you can use these puzzles to get acquainted with the software, expect there to be bugs (documenting these bugs would be greatly appreciated).
 
@@ -23,7 +24,6 @@ These are the puzzles that are not actively being developed for Legup. They are 
 * Fillapix
 * Hey Awake
 * Masyu
-* Skyscrapers
 * Sudoku
 
 While you can use these puzzles to get acquainted with the software, expect there to be bugs (documenting these bugs would be greatly appreciated). However, since they are not actively being worked on, work on these bugs will not be prioritized by the Legup development team. Please feel free to contribute any bug fixes yourself; they will be greatly appreciated by the Legup development team.
