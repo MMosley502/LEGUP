@@ -11,7 +11,9 @@ If the issue is a bug that needs to be fixed, **please include the current behav
 If you are working on an issue, please assign it to yourself and create a branch for that issue (remember to create the branch off of `dev`). Anyone is free to solve any issue, and we encourage people to collaborate on issues together.
 
 ## Creating Branches
-**If you need to create a new branch, you should branch off of `dev`, NOT `master`.** All branches should follow the following format: `puzzle-issue00-descriptive_name` (note that if the branch is solving a general problem and not a problem related to a specific puzzle, the first part can be omitted). If an issue number is included, it should always refer to the respective issue on [Legup's GitHub Issues page](https://github.com/Bram-Hub/Legup/issues). Always create a new branch if you are tackling a new problem so that only one task is being done on a single branch at all times. This will make it easier to debug code and figure out where issues stem from. Please stray away from including your name in your branches.
+**This project follows the [git-flow branching model](https://nvie.com/posts/a-successful-git-branching-model/). This means that, for the most part, if you need to create a new branch, you should branch off of `dev`, NOT `master`.**
+
+All branches involving bug fixes should follow the following format: `puzzle-issue00-descriptive_name` (note that if the branch is solving a general problem and not a problem related to a specific puzzle, the first part can be omitted). If an issue number is included, it should always refer to the respective issue on [Legup's GitHub Issues page](https://github.com/Bram-Hub/Legup/issues). Always create a new branch if you are tackling a new problem so that only one task is being done on a single branch at all times. This will make it easier to debug code and figure out where issues stem from. Please stray away from including your name in your branches.
 
 Examples of good branch names:
 	`sudoku-issue12-fix_terrible_bug`
