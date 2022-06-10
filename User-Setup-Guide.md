@@ -57,4 +57,26 @@ Below is a sample screenshot of the error message that would appear if Java is n
 <img src="https://i.ibb.co/k4wvvyb/image.png" width="400">
 
 # Troubleshooting on macOS
-Under construction
+
+## Common Issues
+[Unable to locate Java Runtime](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#unable-to-locate-java-runtime)
+
+[Unidentified developer](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#unidentified-developer)
+
+### Unable to locate Java Runtime
+When running the Legup jar you may be presented with this message:
+
+<img width="269" alt="image" src="https://user-images.githubusercontent.com/55092742/173092677-a2bc03a5-28b9-478c-b128-a3393fbf8ba9.png">
+
+If you see this message, please go to the [Java download page](https://java.com/en/download/). Download and install Java then you should be able to run the application.
+
+### Unidentified developer
+When running the Legup jar you may be presented with this message:
+
+<img width="266" alt="image" src="https://user-images.githubusercontent.com/55092742/173093717-0aa7535e-8565-4e76-95e2-43ff6eed3b06.png">
+
+If you see this message do the following:
+1. Open Finder and navigate where you Legup.jar is located
+2. Right click the Legup.jar
+3. Hold down the option key and click "Open"
+4. Now you can click Open on the new message and Legup should be running
