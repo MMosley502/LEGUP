@@ -10,3 +10,13 @@ There are two versions of IntelliJ IDEA: IntelliJ IDEA Ultimate and IntelliJ IDE
 ## Installing GitHub Desktop
 Visit the following page to download GitHub Desktop: https://desktop.github.com/
 
+To set up GitHub Desktop, follow the Introduction, Step 1, and Step 2 of the [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) guide. Step 3 is about contributing to projects and adding and cloning repositories, but this setup guide will walk you through this process for Legup.
+
+## Forking the Repository
+Most of the work you will doing will be in your forked repository. Follow the following steps to fork the main repository:
+
+1. Go to the the main Legup repository: https://github.com/Bram-Hub/Legup
+2. Press the "Fork" button on the top right side of the page.
+3. Once you have created your own fork, navigate to it, click the green "Code" button, then press the clipboard to copy your repository's link.
+
+![](https://i.ibb.co/N6D2dTb/fork.png)
