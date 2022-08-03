@@ -10,3 +10,11 @@ For creating branches on the Bram-Hub/Legup repository, please be sure to follow
 ## Commenting
 Since Legup is primarily developed by students, meaning that people constantly leave and join the project. It is important to prioritize commenting your code to ensure that anyone, including someone who is brand new to the project team, can understand quickly what the code is for. It is not necessary to comment every single line, but please comment particularly confusing and important segments of your code.
 
+## Reporting Issues
+In order to [report a new issue](https://github.com/Bram-Hub/Legup/issues/new/choose), you just have to fill out one of the issue forms. In addition to filling out the form, please be sure to specify any other labels that may be applicable to your issue. In order to do this, reference the "Labels" section to the right of the issues form, click on the gear icon, and click on any other applicable labels. Reference the image below for further clarification.
+
+For example, if you were reporting a Nurikabe bug, you would add the Nurikabe label to your issue.
+
+![image](https://user-images.githubusercontent.com/46334090/182708802-918283a9-7fef-4c63-b275-7a5f44f7a8a1.png)
+
+## Pull Requests
