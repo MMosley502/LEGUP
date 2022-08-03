@@ -10,7 +10,7 @@ There are two versions of IntelliJ IDEA: IntelliJ IDEA Ultimate and IntelliJ IDE
 ## Installing GitHub Desktop
 Visit the following page to download GitHub Desktop: https://desktop.github.com/
 
-To set up GitHub Desktop, follow the Introduction, Step 1, and Step 2 of the [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) guide. Step 3 is about contributing to projects and adding and cloning repositories, but this setup guide will walk you through this process for Legup.
+To set up GitHub Desktop, follow Parts 1 and 2 of the [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) guide. Part 3 is about contributing to projects and adding and cloning repositories, but this setup guide will walk you through this process for Legup.
 
 ## Forking the Repository
 Most of the work you will doing will be in your forked repository. Follow the following steps to fork the main repository:
