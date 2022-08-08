@@ -2,7 +2,7 @@
 
 The Legup repository can be daunting at first glance. Here is some general starting information as well as some basics on how to navigate the repository:
 
-## Puzzle Status
+## Puzzle Statuses
 ### Fully Functioning
 These are the puzzles that are fully functioning. If you are new to Legup and want to get used to the software, you should first take a look at these puzzles:
 * Light Up
