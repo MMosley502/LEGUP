@@ -29,9 +29,18 @@ Most of the work you will doing will be in your forked repository. Follow the fo
 ## Downloading the Project
 Once the link to your forked version has been copied, you must [clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) it onto your computer. 
 
-Navigate to your fork, click the green "Code" button, and then click on "Open in GitHub Desktop". After a few moments, GitHub Desktop should open and prompt you to clone the repository. The repository URL should already be filled in and the local path should be `C:\Users\your_username\Documents\GitHub\Legup`. Click on the "Clone" button to clone the repository. Click on "Fetch Origin" to fetch from your fork.
+Navigate to your fork, click the green "Code" button, and then click on "Open in GitHub Desktop". After a few moments, GitHub Desktop should open and prompt you to clone the repository. The repository URL should already be filled in and the local path should, by default, be `C:\Users\your_username\Documents\GitHub\Legup`. You can change this local path if you want, but we don't recommend it. Click on the "Clone" button to clone the repository. Click on "Fetch Origin" to fetch from your fork.
 
 The one operation that GitHub Desktop cannot do is syncing your forked repository with the upstream repository. For information on how to do that, please refer to [GitHub's tutorial on syncing a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
+
+## Opening the Project within IntelliJ
+After opening IntelliJ, click on the "Open" button. Navigate to `C:\Users\your_username\Documents\GitHub\Legup` (or if you changed the path in the previous step, whatever path you changed it to) and open the folder. After a few moments, IntelliJ should open the project up. 
+
+In the bottom right hand corner, a popup will appear saying that it found a Gradle script. Gradle is a tool used by Legup to build the code. Press the "Import Gradle Project" button. After about a minute, IntelliJ will import the Gradle commands needed for Legup. 
+
+To verify that everything worked, press the "Project" button on the left sidebar followed by the "Legup" button (this shows you all the files and folders in the Legup project). Your window should look similar to this:
+
+![](https://i.ibb.co/S3dtrhP/legup-clone.png)
 
 ## Setting Up checkstyle within IntelliJ
 
