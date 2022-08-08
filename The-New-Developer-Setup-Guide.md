@@ -1,6 +1,9 @@
 **Note: This page is a work in progress. Please refer to the old setup guide for now until this is complete.**
+# Developer Setup Guide
 
 For this setup guide, we will be using IntelliJ IDEA and GitHub Desktop. You can use other IDEs such as Eclipse and Visual Studio Code and stick to using the command line for Git, but we prefer using IntelliJ IDEA and GitHub Desktop.
+
+The old developer setup guide set up everything entirely within IntelliJ. While this does work, we found that developers who were new to Git and Java often confused the workflow process because they thought anything they did within the IntelliJ IDE was Java-related. We found the best way to mitigate this confusion was to have these developers do all the Git operations within GitHub Desktop and all the Java coding within IntelliJ IDEA. If you don't want to use GitHub Desktop and prefer to do everything within IntelliJ, please refer to the [old developer setup guide](https://github.com/Bram-Hub/Legup/wiki/Programming-Setup-Guide).
 
 ## Installing IntelliJ IDEA
 Visit the following page to download IntelliJ IDEA: https://www.jetbrains.com/idea/download/#section=windows
@@ -20,3 +23,19 @@ Most of the work you will doing will be in your forked repository. Follow the fo
 3. Once you have created your own fork, navigate to it, click the green "Code" button, then press the clipboard to copy your repository's link.
 
 ![](https://i.ibb.co/N6D2dTb/fork.png)
+
+## Downloading the Project
+Once the link to your forked version has been copied, you must [clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) it onto your computer. 
+
+Navigate to your fork, click the green "Code" button, and then click on "Open in GitHub Desktop". After a few moments, GitHub Desktop should open and prompt you to clone the repository. The repository URL should already be filled in and the local path should be `C:\Users\your_username\Documents\GitHub\Legup`. Click on the "Clone" button to clone the repository. Click on "Fetch Origin" to fetch from your fork.
+
+The one operation that GitHub Desktop cannot do is syncing your forked repository with the upstream repository. For information on how to do that, please refer to [GitHub's tutorial on syncing a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
+
+## Running Legup
+To run Legup, you must build the project into a `.jar` file and then run the newly made file. 
+
+Using IntelliJ, go to the Gradle window on the right side and run `Legup > Tasks > build > jar`. A terminal should appear at the bottom of the screen, and after a few minutes the terminal should print `Task execution finished 'jar'` (if the task never finishes successfully, you need to do some debugging). On the code navigation window, navigate to `Legup/build/libs`.
+
+![](https://i.ibb.co/jMDCK06/jar-location.png)
+
+Right click the `Legup.jar` file and then press "Run 'Legup.jar'" to launch your build of Legup.
