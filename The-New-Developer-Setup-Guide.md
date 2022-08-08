@@ -42,8 +42,6 @@ To verify that everything worked, press the "Project" button on the left sidebar
 
 ![](https://i.ibb.co/S3dtrhP/legup-clone.png)
 
-## Setting Up checkstyle within IntelliJ
-
 ## Running Legup
 To run Legup, you must build the project into a `.jar` file and then run the newly made file. 
 
@@ -52,3 +50,12 @@ Using IntelliJ, go to the Gradle window on the right side and run `Legup > Tasks
 ![](https://i.ibb.co/jMDCK06/jar-location.png)
 
 Right click the `Legup.jar` file and then press "Run 'Legup.jar'" to launch your build of Legup.
+
+## Setting Up checkstyle within IntelliJ
+Within IntelliJ, click on `File > Settings`. After the settings dialog pops up, click on "Plugins" on the menu on the left side. Go to the marketplace and search for "CheckStyle-IDEA" and install the plugin. The item within the marketplace should look like the attachment below:
+
+![image](https://user-images.githubusercontent.com/46334090/183318550-93652e0e-364a-478a-8300-0b1948f783ea.png)
+
+After installing the plugin, click on `File > Settings`. After the settings dialog pops up, click on "Tools" on the menu on the left side and then click on "Checkstyle". By default, there should be two default configuration files: "Sun Checks" and "Google Checks". 
+
+Click on the "+" button to add a configuration. Set the description field to "Legup". Select "Use a local Checkstyle file". Browse for the Legup checkstyle file. From the repository root, the path for the Legup checkstyle file should be `.idea/checkstyle-idea.xml`.
