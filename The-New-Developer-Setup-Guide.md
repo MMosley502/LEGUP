@@ -52,6 +52,7 @@ Using IntelliJ, go to the Gradle window on the right side and run `Legup > Tasks
 Right click the `Legup.jar` file and then press "Run 'Legup.jar'" to launch your build of Legup.
 
 ## Setting Up checkstyle within IntelliJ
+### Installing the CheckStyle Plugin
 Within IntelliJ, click on `File > Settings`. After the settings dialog pops up, click on "Plugins" on the menu on the left side. Go to the marketplace and search for "CheckStyle-IDEA" and install the plugin. The item within the marketplace should look like the attachment below:
 
 ![image](https://user-images.githubusercontent.com/46334090/183318550-93652e0e-364a-478a-8300-0b1948f783ea.png)
@@ -59,3 +60,22 @@ Within IntelliJ, click on `File > Settings`. After the settings dialog pops up, 
 After installing the plugin, click on `File > Settings`. After the settings dialog pops up, click on "Tools" on the menu on the left side and then click on "Checkstyle". By default, there should be two default configuration files: "Sun Checks" and "Google Checks". 
 
 Click on the "+" button to add a configuration. Set the description field to "Legup". Select "Use a local Checkstyle file". Browse for the Legup checkstyle file. From the repository root, the path for the Legup checkstyle file should be `.idea/checkstyle-idea.xml`.
+
+### Testing Your CheckStyle Setup
+At the bottom of IntelliJ, you should have seen a bar that includes options such as "Git", "Run", "TODO", "Problems", and more. "CheckStyle" should now also be added to those options. Click on "CheckStyle", and then set the active configuration to "Legup". On the left, click on "Check Project" to check the entire project. You'll be able to see all the problems with your code formatting after the check is complete.
+
+### Reformatting
+In order to fix any issues with your formatting, the easiest way to do this is to right click the Legup source folder and click "Reformat Code". This will reformat the all the code within the repository to meet the CheckStyle standards.
+
+Additionally, in the future, as you code, you can use the shortcut `Ctrl+Alt+L` to reformat the file you are working on.
+
+### Troubleshooting
+There is a chance that after reformatting, you may still see a bunch of problems if you run CheckStyle. For whatever reason, IntelliJ does not seem to import the entire CheckStyle file correctly.
+
+To fix this, download this `LegupDefault.zip` attachment:
+[LegupDefault.zip](https://github.com/Bram-Hub/Legup/files/9293908/LegupDefault.zip)
+
+This contains `LegupDefault.xml`, which we will be using in the upcoming steps.
+
+Within IntelliJ, go to `File > Settings". Then, in the pop up menu, go to `Editor > Code Style > Java`. Click on the little gear icon, then click on "Import Scheme > IntelliJ IDEA code style XML". Navigate to where you downloaded and unzipped `LegupDefault.xml` and click on it. Then, select "Apply". Now, when you reformat the code and then run Checkstyle, you should not have any problems.
+
