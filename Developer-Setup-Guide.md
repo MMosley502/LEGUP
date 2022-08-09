@@ -1,5 +1,3 @@
-# Developer Setup Guide
-
 For this setup guide, we will be using IntelliJ IDEA and GitHub Desktop. You can use other IDEs such as Eclipse and Visual Studio Code and stick to using the command line for Git, but we prefer using IntelliJ IDEA and GitHub Desktop.
 
 > Note: The old developer setup guide set up everything entirely within IntelliJ. While this does work, we found that developers who were new to Git and Java often confused the workflow process because they thought anything they did within the IntelliJ IDE was Java-related. We found the best way to mitigate this confusion was to have these developers do all the Git operations within GitHub Desktop and all the Java coding within IntelliJ IDEA. 
