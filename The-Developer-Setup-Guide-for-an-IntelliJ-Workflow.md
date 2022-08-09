@@ -1,3 +1,5 @@
+> This developer setup guide is the old developer setup guide for Legup. *It is no longer actively updated.* Please refer to the most recent developer setup guide before coming back to this one. This guide is intended for developers that are interested in doing everything within IntelliJ. Note that there may be steps from the newer setup guide that are applicable to this setup guide (such as the CheckStyle plugin setup). Please refer to the new setup guide for information on what steps are applicable.
+
 # Setup Guide for IntelliJ IDEA
 
 ## Forking the Repository
@@ -42,7 +44,6 @@ The next step is to push your changes. Press the push button. Like before, you w
 
 ### Pull Requests
 The final step is to open a pull request to merge the code from your repository into the main repository (NOTE: you can make multiple commits to your forked repo before opening a pull request, this step does not have to immediately follow the previous one). Open your forked version on GitHub and then press "Pull requests", followed by"New pull request", and then "Create pull request". Create a title for your request as well as a description of the changes. Finally, press "Create pull request". Pull requests must be approved by another maintainer in order to be merged, so all you need to do now is wait for somebody else to approve and then merge your request.
-
 
 # Setup Guide Using the Terminal/Command Line
 Legup uses Gradle to manage its build process. A wrapper script, `gradlew`, is included at the root of the repository. It *should* be executable by default, but if it isn't (*e.g.*, you get a "permission denied" error with one of the subsequent steps), then you'll need to run `chmod +x gradlew`. To build the entire project, just run `./gradlew jar`. This will build a `Legup.jar` file in the `build/libs` subdirectory. Open that file to run Legup. If you want to run Legup "in-place" (*e.g.*, for debugging), then run `./gradlew run` instead. This will automatically launch Legup, but a dedicated `.jar` executable will **not** be created.
