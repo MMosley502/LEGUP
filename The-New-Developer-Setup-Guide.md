@@ -77,5 +77,5 @@ To fix this, download this `LegupDefault.zip` attachment:
 
 This contains `LegupDefault.xml`, which we will be using in the upcoming steps.
 
-Within IntelliJ, go to `File > Settings". Then, in the pop up menu, go to `Editor > Code Style > Java`. Click on the little gear icon, then click on "Import Scheme > IntelliJ IDEA code style XML". Navigate to where you downloaded and unzipped `LegupDefault.xml` and click on it. Then, select "Apply". Now, when you reformat the code and then run Checkstyle, you should not have any problems.
+Within IntelliJ, go to `File > Settings`. Then, in the pop up menu, go to `Editor > Code Style > Java`. Click on the little gear icon, then click on "Import Scheme > IntelliJ IDEA code style XML". Navigate to where you downloaded and unzipped `LegupDefault.xml` and click on it. Then, select "Apply". Now, when you reformat the code and then run Checkstyle, you should not have any problems.
 
