@@ -1,5 +1,3 @@
-**This is very much in progress. Please refer to the old programming principles page until this is done.**
-
 ## Workflow
 Legup uses the Feature Forking Workflow. Please refer to [this blog post](https://medium.com/@jerrylin720/git-workflow-comparison-f84d270708ab) for more information on the Feature Forking Workflow as well as other workflows.
 
