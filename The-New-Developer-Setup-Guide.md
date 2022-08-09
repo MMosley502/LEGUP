@@ -73,9 +73,7 @@ Additionally, in the future, as you code, you can use the shortcut `Ctrl+Alt+L` 
 There is a chance that after reformatting, you may still see a bunch of problems if you run CheckStyle. For whatever reason, IntelliJ does not seem to import the entire CheckStyle file correctly.
 
 To fix this, download this `LegupDefault.zip` attachment:
-[LegupDefault.zip](https://github.com/Bram-Hub/Legup/files/9293908/LegupDefault.zip)
-
-This contains `LegupDefault.xml`, which we will be using in the upcoming steps.
+[LegupDefault.zip](https://github.com/Bram-Hub/Legup/files/9293908/LegupDefault.zip). This contains `LegupDefault.xml`, which we will be using in the upcoming steps.
 
 Within IntelliJ, go to `File > Settings`. Then, in the pop up menu, go to `Editor > Code Style > Java`. Click on the little gear icon, then click on "Import Scheme > IntelliJ IDEA code style XML". Navigate to where you downloaded and unzipped `LegupDefault.xml` and click on it. Then, select "Apply". Now, when you reformat the code and then run Checkstyle, you should not have any problems.
 
