@@ -1,4 +1,3 @@
-**Note: This page is a work in progress. Please refer to the old setup guide for now until this is complete.**
 # Developer Setup Guide
 
 For this setup guide, we will be using IntelliJ IDEA and GitHub Desktop. You can use other IDEs such as Eclipse and Visual Studio Code and stick to using the command line for Git, but we prefer using IntelliJ IDEA and GitHub Desktop.
