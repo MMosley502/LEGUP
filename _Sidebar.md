@@ -13,7 +13,7 @@
 [principles]: https://github.com/Bram-Hub/Legup/wiki/Programming-Principles
 [dev]: https://github.com/Bram-Hub/Legup/wiki/For-Developers
 [dev_setup]: https://github.com/Bram-Hub/Legup/wiki/Programming-Setup-Guide
-[user_setup]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide
+[user_setup]: https://github.com/Bram-Hub/Legup/wiki/Developer-Setup-Guide
 [windows_troubleshooting]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows
 [macos_troubleshooting]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows
 [pointers_for_getting_started]: https://github.com/Bram-Hub/Legup/wiki/Some-Pointers-for-Getting-Started
