@@ -106,18 +106,24 @@ show that a contradiction with the rules of the puzzle have been derived.
 In general, basic rules are *not* required to solve a puzzle, since they can be derived
 from the other two types. For example, one such basic rule for Nurikabe may be the following:
 > If a cell is surrounded by white squares, the cell must be white.
+
 However, if we apply the case rule (that the cell can be either black or white), in the case
 where the cell is black, we can apply the contradiction rule:
 > All black cells must be connected.
+
 This kills the branch, and we have proven that the cell is white.
 
 Thus, for brevity's sake, we will implement every contradiction rule in Nurikabe
 and the one case rule since they are necessary, but only one basic rule as an example.
 The following rules make up Nurikabe:
 > Each connected set of white cells must contain exactly one numbered cell.
+
 > The size of a connected set of white cells must be the number given in its numbered cell.
+
 > All black cells must be connected.
+
 > There may not be a 2x2 area of black cells.
+
 All rules go into a subpackage called `rules`. We divide the first rule into two&mdash;
 the first having no numbers, the second having more than one[^1].
 ```java
