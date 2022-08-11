@@ -1,4 +1,4 @@
-**Note: if you are reading this and have not followed the [developer setup guide](https://github.com/Bram-Hub/Legup/wiki/Programming-Setup-Guide) yet, please do that first.**
+**Note: if you are reading this and have not followed the [developer setup guide](https://github.com/Bram-Hub/Legup/wiki/Developer-Setup-Guide) yet, please do that first.**
 
 The Legup repository can be daunting at first glance. Here is some general starting information as well as some basics on how to navigate the repository:
 
