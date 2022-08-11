@@ -4,6 +4,170 @@ In this example, we will create <a href="https://en.wikipedia.org/wiki/Nurikabe_
 a simple puzzle game played on a rectangular grid.
 ## Organization and Classes
 We begin by creating a new directory under `src/main/java/edu/rpi/legup/puzzle` called `nurikabe`.
-## Adding a Few Rules
+Every puzzle in Legup extends the abstract class `edu.rpu.legup.model.Puzzle`. The constructor and
+the following abstract methods must be implemented:
+* `public void initializeView()`
+* `public Board generatePuzzle(int difficulty)`
+* `public boolean isBoardComplete(Board board)`
+* `public void onBoardChange(Board board)`
+Although all of these methods need to be overridden, not all of them need to do something. For example,
+puzzle generation is not a feature required for every puzzle, so this method may do nothing. Also, there
+may be no need to do anything on board change. With all of this known, we can create a basic `Nurikabe`
+class:
+```java
+package edu.rpi.legup.puzzle.nurikabe;
+
+import edu.rpi.legup.model.Puzzle;
+import edu.rpi.legup.model.gameboard.Board;
+
+public class Nurikabe extends Puzzle {
+    public Nurikabe() {
+        super();
+    }
+
+    @Override
+    public void initializeView() {
+    }
+
+    @Override
+    public Board generatePuzzle(int difficulty) {
+        return null;
+    }
+
+    @Override
+    public boolean isBoardComplete(Board board) {
+        return true;
+    }
+
+    @Override
+    public void onBoardChange(Board board) {
+    }
+}
+```
+This code will compile, but it clearly does nothing. The first thing to analyze here is the
+`edu.rpi.legup.model.gameboard.Board` class. Every puzzle has its own requirements for the board,
+and we implement this by extending `Board`. At a high level, a `Board` is a list of `PuzzleElement`s,
+with a few helper methods to be overridden by subclasses. Nurikabe is a grid-based puzzle, so we can use
+the helper class `edu.rpi.legup.model.gameboard.GridBoard`, which holds an array of `GridCell`s.
+In this game, each cell is either unset (gray), white, black, or a number. The first three cell types
+are mutable, while number cells are immutable.
+
+We start by creating a simple enum of the cell types, in `NurikabeType.java`. For conversion to
+`int` we subtract 2 from the ordinal value: this way we can assume that any cell with a value
+greater than 0 is a number cell.
+```java
+package edu.rpi.legup.puzzle.nurikabe;
+
+public enum NurikabeType {
+    UNKNOWN, BLACK, WHITE, NUMBER;
+
+    public int toValue() {
+        return this.ordinal() - 2;
+    }
+}
+```
+Then we can extend `GridCell`:
+```java
+package edu.rpi.legup.puzzle.nurikabe;
+
+import edu.rpi.legup.model.gameboard.GridCell;
+
+import java.awt.Point;
+
+public class NurikabeCell extends GridCell<Integer> {
+    public NurikabeCell(int valueInt, Point location) {
+        super(valueInt, location);
+    }
+
+    public NurikabeType getType() {
+        switch (data) {
+            case -2:
+                return NurikabeType.UNKNOWN;
+            case -1:
+                return NurikabeType.BLACK;
+            case 0:
+                return NurikabeType.WHITE;
+            default:
+                if (data > 0) {
+                    return NurikabeType.NUMBER;
+                }
+        }
+        return null;
+    }
+}
+```
+## Adding Rules
+Legup allows a user to find a solution by applying simple axioms, or rules. There are
+three types of rules in Legup: basic, case, and contradiction. Basic rules represent a
+logical continuation of the puzzle solution; case rules represent two possible paths on
+which the solution may go, and create a branch in the proof tree; contradiction rules
+show that a contradiction with the rules of the puzzle have been derived.
+
+In general, basic rules are *not* required to solve a puzzle, since they can be derived
+from the other two types. For example, one such basic rule for Nurikabe may be the following:
+> If a cell is surrounded by white squares, the cell must be white.
+However, if we apply the case rule (that the cell can be either black or white), in the case
+where the cell is black, we can apply the contradiction rule:
+> All black cells must be connected.
+This kills the branch, and we have proven that the cell is white.
+
+Thus, for brevity's sake, we will implement every contradiction rule in Nurikabe
+and the one case rule since they are necessary, but only one basic rule as an example.
+The following rules make up Nurikabe:
+> Each connected set of white cells must contain exactly one numbered cell.
+> The size of a connected set of white cells must be the number given in its numbered cell.
+> All black cells must be connected.
+> There may not be a 2x2 area of black cells.
+All rules go into a subpackage called `rules`. We divide the first rule into two&mdash;
+the first having no numbers, the second having more than one[^1].
+```java
+package edu.rpi.legup.puzzle.nurikabe.rules;
+
+import edu.rpi.legup.model.gameboard.Board;
+import edu.rpi.legup.model.gameboard.GridBoard;
+import edu.rpi.legup.model.gameboard.PuzzleElement;
+import edu.rpu.legup.model.rules.ContradictionRule;
+import edu.rpi.legup.puzzle.nurikabe.NurikabeCell;
+import edu.rpi.legup.puzzle.nurikabe.NurikabeType;
+import edu.rpi.legup.puzzle.nurikabe.NurikabeUtilities;
+import edu.rpi.legup.utility.DisjointSets;
+
+import java.util.Set;
+
+public class MultipleNumbersContradictionRule extends ContradictionRule {
+    private final String NO_CONTRADICTION_MESSAGE = "Does not contain a contradiction at this index";
+    private final String INVALID_USE_MESSAGE = "Contradiction must be a numbered cell";
+
+    public MultipleNumbersContradictionRule() {
+        super("Multiple Numbers",
+                "All white regions cannot have more than one number.",
+                "edu/rpi/legup/images/nurikabe/contradictions/MultipleNumber.png");
+    }
+
+    @Override
+    public String checkContradictionAt(Board board, PuzzleElement puzzleElement) {
+        GridBoard<Integer> nurikabeBoard = (GridBoard<Integer>) board;
+
+        NurikabeCell cell = (NurikabeCell) nurikabeBoard.getPuzzleElement(puzzleElement);
+        if(cell.getType() != NurikabeType.NUMBER) {
+            return super.getInvalidUseOfRuleMessage() + ": " + INVALID_USE_MESSAGE;
+        }
+        DisjointSets<NurikabeCell> regions = NurikabeUtilities.getNurikabeRegions(nurikabeBoard);
+        Set<NurikabeCell> numberedRegion = regions.getSet(cell);
+        for (NurikabeCell c : numberedRegion) {
+            if (c != cell && c.getType() == NurikabeType.NUMBER) {
+                return null;
+            }
+        }
+        return super.getNoContradictionMessage() + ": " + NO_CONTRADICTION_MESSAGE;
+    }
+}
+```
+## GUI
+Our Nurikabe implementation is not of much use if there is no graphical interface!
 ## Puzzle Files
 ## Validating Proofs
+
+[^1]: *Note.* To ease implementing the rules, we use a few utilities defined in the `NurikabeUtilities` class,
+  which the reader can find along with the other Nurikabe files in the main repository. Implementing these
+  features is outside the scope of this tutorial.
