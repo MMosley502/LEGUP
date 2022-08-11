@@ -171,8 +171,7 @@ public class MultipleNumbersContradictionRule extends ContradictionRule {
 ```
 ## GUI
 Our Nurikabe implementation is not of much use if there is no graphical interface!
-## Puzzle Files
-## Validating Proofs
+## Puzzle Files, Importing, and Exporting
 
 [^1]: *Note.* To ease implementing the rules, we use a few utilities defined in the `NurikabeUtilities` class,
   which the reader can find along with the other Nurikabe files in the main repository. Implementing these
