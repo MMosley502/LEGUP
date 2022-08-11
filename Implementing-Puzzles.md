@@ -10,6 +10,7 @@ the following abstract methods must be implemented:
 * `public Board generatePuzzle(int difficulty)`
 * `public boolean isBoardComplete(Board board)`
 * `public void onBoardChange(Board board)`
+
 Although all of these methods need to be overridden, not all of them need to do something. For example,
 puzzle generation is not a feature required for every puzzle, so this method may do nothing. Also, there
 may be no need to do anything on board change. With all of this known, we can create a basic `Nurikabe`
