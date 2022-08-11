@@ -2,31 +2,28 @@
 
 The Legup repository can be daunting at first glance. Here is some general starting information as well as some basics on how to navigate the repository:
 
-## Puzzle Status
+## Puzzle Statuses
 ### Fully Functioning
 These are the puzzles that are fully functioning. If you are new to Legup and want to get used to the software, you should first take a look at these puzzles:
 * Light Up
 * Nurikabe
 * Short Truth Table
+* Tree Tent
 
 ### Actively In Development
-These are the puzzles that are currently actively being developed for Legup. They are at various points in development. 
-#### Significantly through development
-* Tree Tent
-#### Just started
+These are the puzzles that are midway through development. They are at various points in the development process.
+
+#### Just started development
+We do not recommend using these puzzles to get acquainted with the software, as they have major functionality that has not been implemented yet.
 * Battleship
 * Skyscrapers
 
+### Mid-way through development
 While you can use these puzzles to get acquainted with the software, expect there to be bugs (documenting these bugs would be greatly appreciated).
-
-### Not Currently In Development
-These are the puzzles that are not actively being developed for Legup. They are at various points in development. 
 * Fillapix
 * Hey Awake
 * Masyu
 * Sudoku
-
-While you can use these puzzles to get acquainted with the software, expect there to be bugs (documenting these bugs would be greatly appreciated). However, since they are not actively being worked on, work on these bugs will not be prioritized by the Legup development team. Please feel free to contribute any bug fixes yourself; they will be greatly appreciated by the Legup development team.
 
 ## Where exactly is the code?
 Most likely, the path for the code you are looking for from the repository root is located in `src/main/java/edu/rpi/legup`. 

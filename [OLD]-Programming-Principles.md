@@ -1,3 +1,5 @@
+# This version of the Programming Principles is outdated. Please refer to the [most recent Programming Principles documentation](https://github.com/Bram-Hub/Legup/wiki/Programming-Principles). This old version is being kept for archival purposes.
+
 ## Commenting
 Since this project will be passed on to different students every year, it is important to include comments so that anyone, including someone who is brand new to the project team, can understand quickly what the code is for. It is not necessary to comment every single line, but please try to “chunk” the code and include comments for every chunk.
 

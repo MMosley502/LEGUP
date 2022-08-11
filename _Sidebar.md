@@ -11,9 +11,9 @@
         * [Troubleshooting on macOS][macos_troubleshooting]
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
-[principles]: https://github.com/Bram-Hub/Legup/wiki/Programming-Principles
+[principles]: https://github.com/Bram-Hub/Legup/wiki/Our-Programming-Standards
 [dev]: https://github.com/Bram-Hub/Legup/wiki/For-Developers
-[dev_setup]: https://github.com/Bram-Hub/Legup/wiki/Programming-Setup-Guide
+[dev_setup]: https://github.com/Bram-Hub/Legup/wiki/Developer-Setup-Guide
 [user_setup]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide
 [windows_troubleshooting]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows
 [macos_troubleshooting]: https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#troubleshooting-on-windows
