@@ -184,7 +184,13 @@ Our Nurikabe implementation is not of much use if there is no graphical interfac
   which the reader can find along with the other Nurikabe files in the main repository. Implementing these
   features is outside the scope of this tutorial.
 
+[//]: --------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Enable Puzzle File Creation for your New Puzzle
+1. [Temporarily disabling puzzle file creation](#temporarily-disabling-puzzle-file-creation)
+2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
+
+
 ## Temporarily Disabling Puzzle File Creation
 We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within Legup from accidentally accessing this in-progress functionality.
 
