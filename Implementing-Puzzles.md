@@ -1,6 +1,6 @@
 There are two parts to implementing a new puzzle: 
 1. [Implement the puzzle itself to allow proofs of your puzzle to be solved](#implementing-a-new-puzzle)
-2. Implement the puzzle editor to allow the creation of puzzle files for your new puzzle within Legup
+2. [Implement the puzzle editor to allow the creation of puzzle files for your new puzzle within Legup](#enable-puzzle-file-creation-for-your-new-puzzle)
 
 For this tutorial, we will be demonstrating how to do both of these steps by walking you through how to implement these features for Nurikabe.
 
