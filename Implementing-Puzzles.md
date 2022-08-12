@@ -189,14 +189,16 @@ Our Nurikabe implementation is not of much use if there is no graphical interfac
 We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within Legup from accidentally accessing this in-progress functionality.
 
 Navigate to `bin/main/edu/rpi/legup/legup/config` and add the following under the last puzzle:
-```
+class:
+```xml
 <puzzle name="Nurikabe"
             qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
             fileType=".xml"
             fileCreationDisabled="false"/>
 ```
 So, for example, if `config` looked like this previously...
-```
+class:
+```xml
 <Legup version="3.0">
     <puzzles>
         <puzzle name="Battleship"
@@ -211,7 +213,8 @@ So, for example, if `config` looked like this previously...
 </Legup>
 ```
 ...it should now look like this:
-```
+class:
+```xml
 <Legup version="3.0">
     <puzzles>
         <puzzle name="Battleship"
@@ -233,7 +236,8 @@ So, for example, if `config` looked like this previously...
 
 ## Specifying Valid Board Dimensions
 In the `Puzzle` class (found at `src/main/java/edu/rpi/legup/model/Puzzle.java`), we find the following method:
-```
+class:
+```java
 /**
  * Checks if the given height and width are valid board dimensions for the given puzzle
  *
@@ -248,7 +252,8 @@ In the `Puzzle` class (found at `src/main/java/edu/rpi/legup/model/Puzzle.java`)
 This, by default, makes any m by n board valid, where m and n are positive integers. 
 
 However, we want to set our own custom validator for Nurikabe. Nurikabe only allows m by n boards where m >= 2 and n >= 2. In order to implement this and override the `Puzzle` class' method, we navigate to the `Nurikabe` class (found at `src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java`) and add the following method:
-```
+class:
+```java
 @Override
 /**
  * Determines if the given dimensions are valid for Nurikabe
@@ -266,7 +271,8 @@ public boolean isValidDimensions(int rows, int columns) {
 
 ## Enabling Puzzle File Creation
 Now, you are ready to enable the puzzle file creation! Navigate back to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`.
-```
+class:
+```xml
 <Legup version="3.0">
     <puzzles>
         <puzzle name="Battleship"
