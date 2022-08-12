@@ -230,3 +230,19 @@ So, for example, if `config` looked like this previously...
 </Legup>
 ```
 `qualifiedClassName` is the name of the class of the puzzle, `fileType` is the file format of the puzzle file, and `fileCreationDisabled` specifies whether or not you want to disable file creation for the puzzle. `fileType` should, for the most part, always be `.xml`.
+
+## Specifying Valid Board Dimensions
+In the `Puzzle` class (found at `src/main/java/edu/rpi/legup/model/Puzzle.java`), we find the following method:
+```
+/**
+ * Checks if the given height and width are valid board dimensions for the given puzzle
+ *
+ * @param rows    the number of rows on the board
+ * @param columns the number of columns on the board
+ * @return true if the given dimensions are valid for the given puzzle, false otherwise
+ */
+ public boolean isValidDimensions(int rows, int columns) {
+     return rows > 0 && columns > 0;
+ }
+```
+This, by default, makes any m by n board valid, where m and n are positive integers. However, we want to set our own custom validator for Nurikabe. 
