@@ -1,4 +1,10 @@
-# Implementing a New Puzzle - Nurikabe
+There are two parts to implementing a new puzzle: 
+1. [Implement the puzzle itself to allow proofs of your puzzle to be solved](#implementing-a-new-puzzle)
+2. Implement the puzzle editor to allow the creation of puzzle files for your new puzzle within Legup
+
+For this tutorial, we will be demonstrating how to do both of these steps by walking you through how to implement these features for Nurikabe.
+
+# Implementing a New Puzzle
 This page aims to be a straightforward guide for developers in creating a new puzzle for Legup.
 In this example, we will create <a href="https://en.wikipedia.org/wiki/Nurikabe_(puzzle)">Nurikabe</a>,
 a simple puzzle game played on a rectangular grid.
@@ -177,3 +183,5 @@ Our Nurikabe implementation is not of much use if there is no graphical interfac
 [^1]: *Note.* To ease implementing the rules, we use a few utilities defined in the `NurikabeUtilities` class,
   which the reader can find along with the other Nurikabe files in the main repository. Implementing these
   features is outside the scope of this tutorial.
+
+# Enable Puzzle File Creation for your New Puzzle
