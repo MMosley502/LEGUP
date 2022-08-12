@@ -245,4 +245,19 @@ In the `Puzzle` class (found at `src/main/java/edu/rpi/legup/model/Puzzle.java`)
      return rows > 0 && columns > 0;
  }
 ```
-This, by default, makes any m by n board valid, where m and n are positive integers. However, we want to set our own custom validator for Nurikabe. 
+This, by default, makes any m by n board valid, where m and n are positive integers. 
+
+However, we want to set our own custom validator for Nurikabe. Nurikabe only allows m by n boards where m >= 2 and n >= 2. In order to implement this, we navigate to the `Nurikabe` class (found at `src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java`) and add the following method:
+```
+@Override
+/**
+ * Determines if the given dimensions are valid for Nurikabe
+ *
+ * @param rows      the number of rows
+ * @param columns   the number of columns
+ * @return true if the given dimensions are valid for Nurikabe, false otherwise
+ */
+public boolean isValidDimensions(int rows, int columns) {
+    return rows >= 2 && columns >= 2;
+}
+```
