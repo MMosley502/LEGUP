@@ -108,3 +108,6 @@ Now, you are ready to enable the puzzle file creation! Navigate back to `bin/mai
     </puzzles>
 </Legup>
 ```
+
+# End of Tutorial
+Congratulations! You now know the basics for how to implement puzzle editor functionality for a puzzle!
