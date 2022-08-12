@@ -185,3 +185,48 @@ Our Nurikabe implementation is not of much use if there is no graphical interfac
   features is outside the scope of this tutorial.
 
 # Enable Puzzle File Creation for your New Puzzle
+## Disabling Puzzle File Creation (temporarily)
+We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within Legup from accidentally accessing this in-progress functionality.
+
+Navigate to `bin/main/edu/rpi/legup/legup/config` and add the following under the last puzzle:
+```
+<puzzle name="Nurikabe"
+            qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
+            fileType=".xml"
+            fileCreationDisabled="false"/>
+```
+So, for example, if `config` looked like this previously...
+```
+<Legup version="3.0">
+    <puzzles>
+        <puzzle name="Battleship"
+            qualifiedClassName="edu.rpi.legup.puzzle.battleship.Battleship"
+            fileType=".xml"
+            fileCreationDisabled="true"/>
+        <puzzle name="TreeTent"
+            qualifiedClassName="edu.rpi.legup.puzzle.treetent.TreeTent"
+            fileType=".xml"
+            fileCreationDisabled="true"/>
+    </puzzles>
+</Legup>
+```
+...it should now look like this:
+```
+<Legup version="3.0">
+    <puzzles>
+        <puzzle name="Battleship"
+            qualifiedClassName="edu.rpi.legup.puzzle.battleship.Battleship"
+            fileType=".xml"
+            fileCreationDisabled="true"/>
+        <puzzle name="TreeTent"
+            qualifiedClassName="edu.rpi.legup.puzzle.treetent.TreeTent"
+            fileType=".xml"
+            fileCreationDisabled="false"/>
+        <puzzle name="Nurikabe"
+            qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
+            fileType=".xml"
+            fileCreationDisabled="true"/>
+    </puzzles>
+</Legup>
+```
+`qualifiedClassName` is the name of the class of the puzzle, `fileType` is the file format of the puzzle file, and `fileCreationDisabled` specifies whether or not you want to disable file creation for the puzzle. `fileType` should, for the most part, always be `.xml`.
