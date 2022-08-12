@@ -247,7 +247,7 @@ In the `Puzzle` class (found at `src/main/java/edu/rpi/legup/model/Puzzle.java`)
 ```
 This, by default, makes any m by n board valid, where m and n are positive integers. 
 
-However, we want to set our own custom validator for Nurikabe. Nurikabe only allows m by n boards where m >= 2 and n >= 2. In order to implement this, we navigate to the `Nurikabe` class (found at `src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java`) and add the following method:
+However, we want to set our own custom validator for Nurikabe. Nurikabe only allows m by n boards where m >= 2 and n >= 2. In order to implement this and override the `Puzzle` class' method, we navigate to the `Nurikabe` class (found at `src/main/java/edu/rpi/legup/puzzle/nurikabe/Nurikabe.java`) and add the following method:
 ```
 @Override
 /**
