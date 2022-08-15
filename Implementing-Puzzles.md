@@ -1,4 +1,4 @@
-# Implementing a New Puzzle - Nurikabe
+# Implementing a New Puzzle
 This page aims to be a straightforward guide for developers in creating a new puzzle for Legup.
 In this example, we will create <a href="https://en.wikipedia.org/wiki/Nurikabe_(puzzle)">Nurikabe</a>,
 a simple puzzle game played on a rectangular grid.
@@ -17,7 +17,7 @@ the following abstract methods must be implemented:
 Although all of these methods need to be overridden, not all of them need to do something. For example,
 puzzle generation is not a feature required for every puzzle, so this method may do nothing. Also, there
 may be no need to do anything on board change. With all of this known, we can create a basic `Nurikabe`
-class:
+
 ```java
 package edu.rpi.legup.puzzle.nurikabe;
 
