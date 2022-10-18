@@ -666,6 +666,8 @@ Most basic rules need only override `checkRawRuleAt()`, which functions similarl
 `checkContradictionAt()` method we saw earlier. The implementation here demonstrates the principle
 above: we use a contradiction rule to implement the corresponding basic rule.
 
+**WARNING:** `checkRawRuleAt()` should only reference the parameter `transition` twice. That's one to cast `transition` to the specific puzzle's board type, and again to get the parent of the `transition`. More references to `transition` may cause self-validation bugs.
+
 *Note.* `BasicRule` also requires you to implement `getDefaultBoard()`, which is a method used for
 default-rule applications. This feature is, however, experimental, and it is not implemented in
 many puzzles.
