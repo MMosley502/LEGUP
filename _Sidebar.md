@@ -12,6 +12,7 @@
         * [Troubleshooting on Windows][windows_troubleshooting]
         * [Troubleshooting on macOS][macos_troubleshooting]
     * [Tutorial][legup_tutorial]
+        *[Nurikabe Tutorial][nurikabe_tutorial]
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
 [standards]: https://github.com/Bram-Hub/Legup/wiki/Our-Programming-Standards
@@ -25,3 +26,4 @@
 [implementing-puzzle-editor-functionality]: https://github.com/Bram-Hub/Legup/wiki/Implementing-the-Puzzle-Editor-Functionality-for-a-Puzzle
 [windows_installer_compilation]: https://github.com/Bram-Hub/Legup/wiki/Windows-Installer-Compilation
 [legup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/LEGUP-Tutorial
+[nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
