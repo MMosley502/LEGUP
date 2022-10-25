@@ -1,6 +1,11 @@
 # Nurikabe 
-Nurikabe is a puzzle, unfilled squares are shown as gray, and your job is to color all the cells white or black according to the rules of the game
-Clicking on a gray tile first fills it white, clicking on a white tile fills it black, and clicking on a black tile returns it to becoming gray
+Nurikabe is a puzzle with unfilled squares  shown in gray. Your task is to color all the cells white or black according to the rules of the game
+
+Clicking on a gray tile first fills it white
+
+Clicking on a white tile fills it black
+
+Clicking on a black tile returns it to becoming gray
 
 # Rules
 ### Here are the basic rules of the puzzle
