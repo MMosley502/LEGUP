@@ -66,6 +66,7 @@ This rule is a derivation of Rule #2, Use this rule to place a single white tile
 ## Contradiction rules
 ### Black Square
 [![Dwvrmv.th.jpg](https://iili.io/Dwvrmv.th.jpg)](https://freeimage.host/i/Dwvrmv)
+
 Rule comes directly from Rule #5. Use this rule when following a deriviation that leads to a black square being formed
 
 ### Isolated Black
