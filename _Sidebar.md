@@ -12,7 +12,7 @@
         * [Troubleshooting on Windows][windows_troubleshooting]
         * [Troubleshooting on macOS][macos_troubleshooting]
     * [Tutorial][legup_tutorial]
-        *[Nurikabe Tutorial][nurikabe_tutorial]
+        * [Nurikabe Tutorial][nurikabe_tutorial]
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
 [standards]: https://github.com/Bram-Hub/Legup/wiki/Our-Programming-Standards
