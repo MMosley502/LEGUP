@@ -27,7 +27,6 @@ Rule comes directly from Rule #2. Use this rule to place "empty" tiles on all ti
 ### Empty Corners
 Rule is a derivation of Rule #1 and #3. Use this rule to place "empty" tiles on the corner of numbered black squares if placing a light there would make fufilling Rule #3 impossible for that black tile.
 
-
 ### Finish with Bulbs
 
 Rule comes directly from Rule #3. Use this rule to place lightbulbs on the remaining adjacent tiles to fufill lightbulb requirement
@@ -42,13 +41,18 @@ Rule is a derivation of the goal. Use this rule to place a lightbulb if there is
 
 
 ## Contradiction rules
-### Rule #
-[INSERT LINK HERE]
+### Bulb in Path
+Rule comes directly from Rule #2. Use this rule when following a derivation that requires a lightbulb to be placed in a lit tile.
 
-### Rule #
-[INSERT LINK HERE]
-### Rule #
-[INSERT LINK HERE]
+### Cannot Light Cell
+Rule is a derivation of rule #2 and the goal state. Use this rule when following a derivation that would not let you place a lightbulb that could light up a tile given the rules. Usually this is used when the tile is deemed 'empty' already
+
+
+### Too Few Bulbs
+Rule comes directly from Rule #3. Use this rule when following a derivation that leads to a black tile being surronded by fewer lightbulbs than required
+
+### Many Bulbs
+Rule comes directly from Rule #3. Use this rule when following a derivation that leads to a black tile being surronded by more lightbulbs than required
 
 
 
