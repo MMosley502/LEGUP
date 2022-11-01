@@ -58,10 +58,9 @@ Rule comes directly from Rule #3. Use this rule when following a derivation that
 
 ## Case rules
 
-### Rule #
-[INSERT LINK HERE]
+### Satisfy Number
+If a tile can be either a 'empty' tile or have a Lightbulb,  use this rule to create a split in the tree where the tile is 'empty' in one path, and has a lightbulb in the other
 
-### Rule #
-[INSERT LINK HERE]
-### Rule #
-[INSERT LINK HERE]
+### Light or Empty
+If a numbered black square has more than 1 possible arrangement of lightbulbs,  use this rule to create a split in the tree each branch has a valid combination of lightbulbs.
+
