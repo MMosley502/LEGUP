@@ -85,7 +85,7 @@ Rule comes directly from Rule #3. Use this rule when following a derivation that
 
 [![bklHqN.th.jpg](https://iili.io/bklHqN.th.jpg)](https://freeimage.host/i/bklHqN)
 
-If a tile can be either a 'empty' tile or have a Lightbulb,  use this rule to create a split in the tree where the tile is 'empty' in one path, and has a lightbulb in the other
+If a tile can be either a 'empty' tile or have a Lightbulb,  use this rule to create a split where each branch has a valid placement of lightbulbs
 
 ### Light or Empty
 
