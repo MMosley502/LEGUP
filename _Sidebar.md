@@ -14,6 +14,7 @@
     * [Tutorial][legup_tutorial]
         * [Nurikabe Tutorial][nurikabe_tutorial]
         * [Lightup Tutorial][lightup_tutorial]
+        * [TreeTent Tutorial][TreeTent_tutorial]
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
 [standards]: https://github.com/Bram-Hub/Legup/wiki/Our-Programming-Standards
@@ -29,3 +30,4 @@
 [legup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/LEGUP-Tutorial
 [nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
 [lightup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Lightup-Rules
+[TreeTent_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Tree-Tent-Rules
