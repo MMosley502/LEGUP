@@ -24,29 +24,36 @@ Clicking on a tent tile returns it to being unfilled
 
 ### Empty Field
 
-
+Rule ccomes directly from Rule #3. Use this rule to place grass tiles on any tile that isn't horizontally or vertically adjacent to a tree.
 
 
 ### Finish with Grass
 
-
+Rule ccomes directly from Rule #2. Use this rule to place grass tiles on any tile in a row/column that has the required number of tents
 
 ### Finish with Tents
 
-
-### Finish with Empty
+Rule ccomes directly from Rule #2. Use this rule to place tent tiles on any tile in a row/column that has the same number of unfilled tiles as there are tents required.  
 
 
 ### Last Camping Spot
 
+Derivation of Rule #1. Use this rule to place a tent next to a tree which currently has no tents and is suroonded by grass/tree tiles.
+
 ### Surrond Tent with Grass
+
+Rule ccomes directly from Rule #4. Use this rule to place grass tiles on any tile that is vertically, horizontally, or diagonally adjacent to a tent
 
 ### Tent for Tree
 
+Rule comes directly from Rule #1.
+
 ### Tree for Tent
 
+Rule comes directly from Rule #1.
 
 ## Contradiction rules
+
 ### No Tent for Tree
 
 
