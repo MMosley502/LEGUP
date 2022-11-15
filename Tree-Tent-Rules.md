@@ -1,11 +1,11 @@
 # Tree Tent
-Tree Tent is a puzzle with unfilled squares shown in gray. Your task is to place tents in such a way that the number tents in each row and column is satisifed, and that each tree has a tent next to it
+Tree Tent is a puzzle with unfilled squares shown in gray. Your task is to place tents in such a way that the number tents in each row and column is satisifed, and that each tree has a tent next to it.
 
-Clicking on a unfilled tile places a grass tile
+Clicking on a unfilled tile places a grass tile.
 
-Clicking on a grass tile replaces it with a tent tile
+Clicking on a grass tile replaces it with a tent tile.
 
-Clicking on a tent tile returns it to being unfilled
+Clicking on a tent tile returns it to being unfilled.
 
 # Rules
 ### Here are the basic rules of the puzzle
@@ -16,7 +16,7 @@ Clicking on a tent tile returns it to being unfilled
 
 3) A tent can only be found horizontally or vertically adjacent to a tree.
 
-4) Tents are never adjacent to each other, neither vertically, horizontally, nor diagonally
+4) Tents are never adjacent to each other, neither vertically, horizontally, nor diagonally.
 
 # LEGUP Proof rules
 ## Basic rules
@@ -29,7 +29,7 @@ Rule ccomes directly from Rule #3. Use this rule to place grass tiles on any til
 
 ### Finish with Grass
 
-Rule ccomes directly from Rule #2. Use this rule to place grass tiles on any tile in a row/column that has the required number of tents
+Rule ccomes directly from Rule #2. Use this rule to place grass tiles on any tile in a row/column that has the required number of tents.
 
 ### Finish with Tents
 
@@ -42,7 +42,7 @@ Derivation of Rule #1. Use this rule to place a tent next to a tree which curren
 
 ### Surrond Tent with Grass
 
-Rule ccomes directly from Rule #4. Use this rule to place grass tiles on any tile that is vertically, horizontally, or diagonally adjacent to a tent
+Rule ccomes directly from Rule #4. Use this rule to place grass tiles on any tile that is vertically, horizontally, or diagonally adjacent to a tent.
 
 ### Tent for Tree
 
@@ -56,20 +56,25 @@ Rule comes directly from Rule #1.
 
 ### No Tent for Tree
 
+Rule comes directly from Rule #1. Use this rule if a derivation leads to a situation where no place for a tent to be placed vertically or horizontally adjacent to a tree.
 
 ### No Tree for Tent
 
-
+Rule comes directly from Rule #1. Use this rule if a derivation leads to a situation where there is a tent that isn't placed vertically or horizontally adjacent to a tree.
 
 ### Too few Tents
 
-
+Rule comes directly from Rule #2. Use this rule if a derivation leads to a row/column having not enough tents to fufill the requirements.
 
 ### Too many Tents
+
+Rule comes directly from Rule #2. Use this rule if a derivation leads to a row/column having more tents than the requirements state.
+
 
 
 ### Touching Tents
 
+Rule comes directly from Rule #4. Use this rule if a derivation leads to a two tents being placed vertically, horizontally, or diagonally adjacent.
 
 
 
@@ -77,9 +82,12 @@ Rule comes directly from Rule #1.
 
 ### Fill in Row
 
+
 ### Links from Tent
 
+
 ### Links from Tree
+
 
 ### Tent or Grass
 
