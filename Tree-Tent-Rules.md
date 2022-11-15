@@ -82,14 +82,22 @@ Rule comes directly from Rule #4. Use this rule if a derivation leads to a two t
 
 ### Fill in Row
 
+Use this rule to create a branch in the proof of all possible combinations of tents and grass tiles of a particular row 
+
 
 ### Links from Tent
+
+Use this rule to select a tent and create a branch in the proof where each branch contains a possible link beteween that tent in a tree.
 
 
 ### Links from Tree
 
+Use this rule to select a tree and create a branch in the proof where each branch contains a possible link beteween that tree to any ajacent tents.
+
 
 ### Tent or Grass
+
+Use this rule to create a split in the tree where the tile selected is a tent in one branch, and a grass tile in another branch
 
 
 
