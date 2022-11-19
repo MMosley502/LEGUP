@@ -15,6 +15,8 @@
         * [Nurikabe Tutorial][nurikabe_tutorial]
         * [Lightup Tutorial][lightup_tutorial]
         * [TreeTent Tutorial][TreeTent_tutorial]
+        * [Skyscrapers Tutorial][Skyscrapers_tutorial]
+
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
 [standards]: https://github.com/Bram-Hub/Legup/wiki/Our-Programming-Standards
@@ -31,3 +33,4 @@
 [nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
 [lightup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Lightup-Rules
 [TreeTent_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Tree-Tent-Rules
+[Skyscrapers_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Skyscrapers-Rules
