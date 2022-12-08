@@ -113,12 +113,28 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 ## Contradiction rules
 
 ### Contradicting 'And'
+
+Use this rule to end a line of reasoning if the value of the 'And' is incorrect based on the surronding expressions
+
 ### Contradicting 'Variable'
+
+Use this rule to end a line of reasoning if the value a variable in two locations has two different states
+
 ### Contradicting 'Bicondtional'
+
+Use this rule to end a line of reasoning if the value of the 'Bicondtional' is incorrect based on the surronding expressions
+
 ### Contradicting 'Condtional'
+
+Use this rule to end a line of reasoning if the value of the 'Condtional' is incorrect based on the surronding expressions
+
 ### Contradicting 'Negation'
+
+Use this rule to end a line of reasoning if the value of the 'Not' is incorrect based on the surronding expression
+
 ### Contradicting 'Or'
 
+Use this rule to end a line of reasoning if the value of the 'Or' is incorrect based on the surronding expressions
 
 ## Case rules
 
