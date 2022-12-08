@@ -139,7 +139,21 @@ Use this rule to end a line of reasoning if the value of the 'Or' is incorrect b
 ## Case rules
 
 ### 'And' Case
+
+Use this case on a known 'And' to create a split in the branch where the surronding expressions will satisfy the condition
+
 ### 'Atomic' Case
+
+Use this case on a unknown variable to create a split in the branch where the variable is true in one branch, and false in another
+
 ### 'Biconditional' Case
+
+Use this case on a known 'Biconditional' to create a split in the branch where the surronding expressions will satisfy the condition
+
 ### 'Conditional' Case
+
+Use this case on a known 'Conditional' to create a split in the branch where the surronding expressions will satisfy the condition
+
 ### 'Or' Case
+
+Use this case on a known 'Or' to create a split in the branch where the surronding expressions will satisfy the condition
