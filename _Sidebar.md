@@ -15,6 +15,7 @@
         * [Nurikabe Tutorial][nurikabe_tutorial]
         * [Lightup Tutorial][lightup_tutorial]
         * [TreeTent Tutorial][TreeTent_tutorial]
+        * [Skyscrapers Tutorial][Skyscrapers_tutorial]
         * [Short Truth Table Tutorial][Short-Truth-Table_tutorial]
 
 [home]: https://github.com/Bram-Hub/Legup/wiki
@@ -32,4 +33,5 @@
 [nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
 [lightup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Lightup-Rules
 [TreeTent_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Tree-Tent-Rules
+[Skyscrapers_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Skyscrapers-Rules
 [Short-Truth-Table_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Short-Truth-Table-Rules

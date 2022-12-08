@@ -26,7 +26,7 @@ Clicking on a tent tile returns it to being unfilled.
 
 [![H9o9yk7.th.jpg](https://iili.io/H9o9yk7.th.jpg)](https://freeimage.host/i/H9o9yk7)
 
-Rule ccomes directly from Rule #3. Use this rule to place grass tiles on any tile that isn't horizontally or vertically adjacent to a tree.
+Rule comes directly from Rule #3. Use this rule to place grass tiles on any tile that isn't horizontally or vertically adjacent to a tree.
 
 
 ### Finish with Grass
