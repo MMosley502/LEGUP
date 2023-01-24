@@ -9,6 +9,7 @@ These are the puzzles that are fully functioning. If you are new to Legup and wa
 * Nurikabe
 * Short Truth Table
 * Tree Tent
+* Skyscrapers
 
 ### Actively In Development
 These are the puzzles that are midway through development. They are at various points in the development process.
@@ -16,7 +17,6 @@ These are the puzzles that are midway through development. They are at various p
 #### Just started development
 We do not recommend using these puzzles to get acquainted with the software, as they have major functionality that has not been implemented yet.
 * Battleship
-* Skyscrapers
 
 ### Mid-way through development
 While you can use these puzzles to get acquainted with the software, expect there to be bugs (documenting these bugs would be greatly appreciated).
