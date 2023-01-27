@@ -44,6 +44,8 @@ To run Legup, you must build the project into a `.jar` file and then run the new
 
 Using IntelliJ, go to the Gradle window on the right side and run `Legup > Tasks > build > jar`. A terminal should appear at the bottom of the screen, and after a few minutes the terminal should print `Task execution finished 'jar'` (if the task never finishes successfully, you need to do some debugging). On the code navigation window, navigate to `Legup/build/libs`.
 
+NOTE: If the Legup.jar file or the build folder does not appear after running the jar file, try running the `buildNeeded` and `buildDependants` files (in that order)
+
 ![](https://i.ibb.co/jMDCK06/jar-location.png)
 
 Right click the `Legup.jar` file and then press "Run 'Legup.jar'" to launch your build of Legup.
