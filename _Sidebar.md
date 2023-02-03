@@ -31,7 +31,7 @@
 [windows_installer_compilation]: https://github.com/Bram-Hub/Legup/wiki/Windows-Installer-Compilation
 [legup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/LEGUP-Tutorial
 [nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
-[lightup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Lightup-Rules
+[lightup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Light%20up-Rules
 [TreeTent_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Tree-Tent-Rules
 [Skyscrapers_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Skyscrapers-Rules
 [Short-Truth-Table_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Short-Truth-Table-Rules
