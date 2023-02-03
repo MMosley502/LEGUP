@@ -6,14 +6,14 @@ Clicking on a tile increases the number in the square by 1, up to the width of t
 Clicking on a tile of max height returns it to blank.
 
 # Rules 
-### Here are the basic rules of the puzzle
+### Here are the direct rules of the puzzle
 
 1) Each row and column must contain the numbers 1-N, N being the width of the board.
 
 2) The numbers outside the board indicate the number of buildings visible from that perspective in that row or column. A larger number indicates a taller building, and taller buildings obscure the smaller buildings behind them.
 
-# LEGUP Proof rules
-## Case rules
+# LEGUP Proof Rules
+## Case Rules
 
 ### Cell For Number 
 
@@ -74,7 +74,7 @@ Derived from Rule #2. Use this when a full row/col has more buildings visible th
 
 Derived Rule #2. Use this when the row/col isn't full yet, but a visibility contradiction is inevitable.
 
-## Basic Rules
+## Direct Rules
 
 ### N-Edge
 
