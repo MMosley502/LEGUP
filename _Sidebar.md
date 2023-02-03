@@ -13,7 +13,7 @@
         * [Troubleshooting on macOS][macos_troubleshooting]
     * [Tutorial][legup_tutorial]
         * [Nurikabe Tutorial][nurikabe_tutorial]
-        * [Light up Tutorial][light_up_tutorial]
+        * [Light Up Tutorial][light_up_tutorial]
         * [Tree Tent Tutorial][Tree_Tent_tutorial]
         * [Skyscrapers Tutorial][Skyscrapers_tutorial]
         * [Short Truth Table Tutorial][Short-Truth-Table_tutorial]
