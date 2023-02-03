@@ -8,7 +8,7 @@ Clicking on a lightbulb replaces it with a "empty" tile, represented by a black 
 Clicking on a "empty" tile returns it to being unfilled
 
 # Rules
-### Here are the basic rules of the puzzle
+### Here are the direct rules of the puzzle
 
 1) Lightbulbs shines light on ALL tiles on it's row and column unless blocked by a black tile.
 
@@ -17,7 +17,7 @@ Clicking on a "empty" tile returns it to being unfilled
 3) black tiles with numbers (0 -> 4) must have that many lightbulbs cardinally adjacent to them (no diagonols)
 
 # LEGUP Proof rules
-## Basic rules
+## Direct rules
 
 
 ### Empty Cells in Light
@@ -30,7 +30,7 @@ Rule comes directly from Rule #2. Use this rule to place "empty" tiles on all ti
 
 [![bkczHg.th.jpg](https://iili.io/bkczHg.th.jpg)](https://freeimage.host/i/bkczHg)
 
-Rule is a derivation of Rule #1 and #3. Use this rule to place "empty" tiles on the corner of numbered black squares if placing a light there would make fufilling Rule #3 impossible for that black tile.
+Rule is a derivation of Rule #1 and #3. Use this rule to place "empty" tiles on the corner of numbered black squares if placing a light there would make fulfilling Rule #3 impossible for that black tile.
 
 ### Finish with Bulbs
 
