@@ -1,5 +1,5 @@
 # Tree Tent
-Tree Tent is a puzzle with unfilled squares shown in gray. Your task is to place tents in such a way that the number tents in each row and column is satisifed, and that each tree has a tent next to it.
+Tree Tent is a puzzle with unfilled squares shown in gray. Your task is to place tents in such a way that the number of tents in each row and column is satisfied, and that each tree has a tent next to it.
 
 Clicking on a unfilled tile places a grass tile.
 
@@ -8,7 +8,7 @@ Clicking on a grass tile replaces it with a tent tile.
 Clicking on a tent tile returns it to being unfilled.
 
 # Rules
-### Here are the basic rules of the puzzle
+### Here are the direct rules of the puzzle
 
 1) Each tent is attached to one tree (so there are as many tents as there are trees).
 
@@ -18,8 +18,8 @@ Clicking on a tent tile returns it to being unfilled.
 
 4) Tents are never adjacent to each other, neither vertically, horizontally, nor diagonally.
 
-# LEGUP Proof rules
-## Basic rules
+# LEGUP Proof Rules
+## Direct Rules
 
 
 ### Empty Field
@@ -48,11 +48,11 @@ Rule ccomes directly from Rule #2. Use this rule to place tent tiles on any tile
 
 Derivation of Rule #1. Use this rule to place a tent next to a tree which currently has no tents and is suroonded by grass/tree tiles.
 
-### Surrond Tent with Grass
+### Surround Tent with Grass
 
 [![H9oHsyP.th.jpg](https://iili.io/H9oHsyP.th.jpg)](https://freeimage.host/i/H9oHsyP)
 
-Rule ccomes directly from Rule #4. Use this rule to place grass tiles on any tile that is vertically, horizontally, or diagonally adjacent to a tent.
+Rule comes directly from Rule #4. Use this rule to place grass tiles on any tile that is vertically, horizontally, or diagonally adjacent to a tent.
 
 ### Tent for Tree
 
@@ -66,7 +66,7 @@ Rule comes directly from Rule #1.
 
 Rule comes directly from Rule #1.
 
-## Contradiction rules
+## Contradiction Rules
 
 ### No Tent for Tree
 
@@ -80,13 +80,13 @@ Rule comes directly from Rule #1. Use this rule if a derivation leads to a situa
 
 Rule comes directly from Rule #1. Use this rule if a derivation leads to a situation where there is a tent that isn't placed vertically or horizontally adjacent to a tree.
 
-### Too few Tents
+### Too Few Tents
 
 [![H9oJMAP.th.jpg](https://iili.io/H9oJMAP.th.jpg)](https://freeimage.host/i/H9oJMAP)
 
 Rule comes directly from Rule #2. Use this rule if a derivation leads to a row/column having not enough tents to fufill the requirements.
 
-### Too many Tents
+### Too Many Tents
 
 [![H9oJjVa.th.jpg](https://iili.io/H9oJjVa.th.jpg)](https://freeimage.host/i/H9oJjVa)
 
@@ -102,7 +102,7 @@ Rule comes directly from Rule #4. Use this rule if a derivation leads to a two t
 
 
 
-## Case rules
+## Case Rules
 
 ### Fill in Row
 
