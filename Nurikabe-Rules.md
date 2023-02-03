@@ -8,7 +8,7 @@ Clicking on a white tile fills it black
 Clicking on a black tile returns it to becoming gray
 
 # Rules
-### Here are the basic rules of the puzzle
+### Here are the Direct Rules of the Puzzle
 
 1) You cannot fill in cells containing numbers black.
 2) A number cell tells the number of continuous white cells it is connected to INCLUDING itself. 
@@ -16,8 +16,8 @@ Clicking on a black tile returns it to becoming gray
 4) The black cells are linked to be a single continuous wall.
 5) Black cells cannot be linked to be 2×2 square or larger.
 
-# LEGUP Proof rules
-## Basic rules
+# LEGUP Proof Rules
+## Direct Rules
 ### Black Between Regions 
 [![DwSKnp.th.jpg](https://iili.io/DwSKnp.th.jpg)](https://freeimage.host/i/DwSKnp)
 
@@ -38,12 +38,12 @@ This rule is a deriviation of Rule #3. Use this rule to place black tiles if a s
 
 This rule is a derivation of Rule #4. Use this rule to place black tiles next to any black tile that is  surrounded by white tiles 
 
-### Fill In Black
+### Fill in Black
 [![Dw8ayJ.th.jpg](https://iili.io/Dw8ayJ.th.jpg)](https://freeimage.host/i/Dw8ayJ)
 
 This rule is a deriviation from Rule #4. Use this rule to place black tiles if a unfilled square is  surrounded by black tiles 
 
-### Fill In White
+### Fill in White
 [![Dw8han.th.jpg](https://iili.io/Dw8han.th.jpg)](https://freeimage.host/i/Dw8han)
 
 This rule is a deriviation from Rule #4. Use this rule to place white tiles if a unfilled square is  surrounded by white tiles
@@ -63,7 +63,7 @@ This rule is a deriviation of Rule #2. Use this rule to place black tiles around
 
 This rule is a derivation of Rule #2, Use this rule to place a single white tiles on any region that needs expansion and currently  surrounded by black tiles
 
-## Contradiction rules
+## Contradiction Rules
 ### Black Square
 [![Dwvrmv.th.jpg](https://iili.io/Dwvrmv.th.jpg)](https://freeimage.host/i/Dwvrmv)
 
@@ -99,7 +99,7 @@ Rule comes directly from Rule #2. Use this rule when following a derivation that
 
 Rule is a combination of Rule #2 and Rule #3. Use this rule when following a deriviation that leads to a white being placed where no numbered tiles are able to reach it
 
-## Case rules
+## Case Rules
 
 ### Black or White
 
