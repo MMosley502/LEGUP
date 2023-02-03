@@ -8,7 +8,7 @@ Clicking on a white tile fills it black
 Clicking on a black tile returns it to becoming gray
 
 # Rules
-### Here are the Direct Rules of the Puzzle
+### Here are the direct rules of the puzzle
 
 1) You cannot fill in cells containing numbers black.
 2) A number cell tells the number of continuous white cells it is connected to INCLUDING itself. 
