@@ -1,5 +1,5 @@
 # Tree Tent
-Tree Tent is a puzzle with unfilled squares (shown in grey). Your task is to place tents in such a way that the number of tents in each row and column is satisfied, and that each tree has a tent next to it.
+Tree Tent is a puzzle with unfilled squares (shown in gray). Your task is to place tents in such a way that the number of tents in each row and column is satisfied, and that each tree has a tent next to it.
 
 Clicking on a unfilled tile places a grass tile.
 
@@ -10,11 +10,11 @@ Clicking on a tent tile returns it to being unfilled.
 # Rules
 ### Here are the direct rules of the puzzle
 
-1) Each tent is attached to one tree (so there are as many tents as there are trees).
+1) Each tent is attached to one tree (so the number of tents and trees are equal).
 
 2) The numbers across the top and down the side show how many tents are in the respective row or column.
 
-3) A tent can only be places horizontally or vertically adjacent to a tree.
+3) A tent can only be placed horizontally or vertically adjacent to a tree.
 
 4) Tents can never be placed adjacent to each other, neither vertically, horizontally, nor diagonally.
 
