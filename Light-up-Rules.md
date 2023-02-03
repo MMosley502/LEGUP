@@ -1,20 +1,20 @@
 # Light up
-Light up is a puzzle with unfilled squares shown in gray. Your task ensure all non-black tiles are lit up with light bulbs.
+Light up is a puzzle with unfilled squares shown in gray. Your task is to ensure all non-black tiles are lit up with light bulbs.
 
-Clicking on a unfilled tile places a light bulb and colors the area it lights up yellow
+Clicking on an unfilled tile places a light bulb and colors the area it lights up yellow
 
-Clicking on a light bulb replaces it with a "empty" tile, represented by a black dot
+Clicking on a light bulb replaces it with an "empty" tile, represented by a black dot
 
 Clicking on a "empty" tile returns it to being unfilled
 
 # Rules
 ### Here are the direct rules of the puzzle
 
-1) Light bulbs shines light on ALL tiles on it's row and column unless blocked by a black tile.
+1) Light bulbs light up ALL tiles on its row and column unless blocked by a black tile.
 
 2) Light bulbs cannot shine lights on each other
 
-3) black tiles with numbers (0 -> 4) must have that many light bulbs cardinally adjacent to them (no diagonals)
+3) Black tiles with numbers (0 to 4) must have that many light bulbs located cardinal adjacent to them (no diagonals)
 
 # LEGUP Proof Rules
 ## Direct Rules
@@ -30,7 +30,7 @@ Rule comes directly from Rule #2. Use this rule to place "empty" tiles on all ti
 
 [![bkczHg.th.jpg](https://iili.io/bkczHg.th.jpg)](https://freeimage.host/i/bkczHg)
 
-Rule is a derivation of Rule #1 and #3. Use this rule to place "empty" tiles on the corner of numbered black squares if placing a light there would make fulfilling Rule #3 impossible for that black tile.
+This rule is a derivation of Rules #1 and #3. Use this rule to place "empty" tiles on the corner of numbered black squares if placing a light there would make fulfilling Rule #3 impossible for that black tile.
 
 ### Finish with Bulbs
 
@@ -48,7 +48,7 @@ Rule comes directly from Rule #3. Use this rule to place "empty" tiles on the re
 
 [![bkchs2.th.jpg](https://iili.io/bkchs2.th.jpg)](https://freeimage.host/i/bkchs2)
 
-Rule is a derivation of the goal. Use this rule to place a light bulb if there is a unlighted tile in which all other options for light bulbs are not possible
+Rule is a derivation of the goal. Use this rule to place a light bulb if there is an unlighted tile in which all other options for light bulbs are not possible
 
 
 ## Contradiction Rules
@@ -85,11 +85,11 @@ Rule comes directly from Rule #3. Use this rule when following a derivation that
 
 [![bklHqN.th.jpg](https://iili.io/bklHqN.th.jpg)](https://freeimage.host/i/bklHqN)
 
-If a tile can be either a 'empty' tile or have a Light bulb,  use this rule to create a split where each branch has a valid placement of light bulbs
+If a tile can be either an 'empty' tile or have a light bulb, use this rule to create a split where each branch has a valid placement of light bulbs
 
 ### Light or Empty
 
 [![bkctea.th.jpg](https://iili.io/bkctea.th.jpg)](https://freeimage.host/i/bkctea)
 
-If a numbered black square has more than 1 possible arrangement of light bulbs,  use this rule to create a split in the tree each branch has a valid combination of light bulbs.
+If a numbered black square has more than one possible arrangement of light bulbs, use this rule to create a split in the tree each branch has a valid combination of light bulbs.
 
