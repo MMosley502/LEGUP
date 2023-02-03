@@ -1,5 +1,5 @@
-# Light up
-Light up is a puzzle with unfilled squares shown in gray. Your task is to ensure all non-black tiles are lit up with light bulbs.
+# Light Up
+Light Up is a puzzle with unfilled squares shown in gray. Your task is to ensure all non-black tiles are lit up with light bulbs.
 
 Clicking on an unfilled tile places a light bulb and colors the area it lights up yellow
 
@@ -10,7 +10,7 @@ Clicking on a "empty" tile returns it to being unfilled
 # Rules
 ### Here are the direct rules of the puzzle
 
-1) Light bulbs light up ALL tiles on its row and column unless blocked by a black tile.
+1) Light bulbs light Up ALL tiles on its row and column unless blocked by a black tile.
 
 2) Light bulbs cannot shine lights on each other
 
@@ -62,7 +62,7 @@ Rule comes directly from Rule #2. Use this rule when following a derivation that
 
 [![bkcOg9.th.jpg](https://iili.io/bkcOg9.th.jpg)](https://freeimage.host/i/bkcOg9)
 
-Rule is a derivation of rule #2 and the goal state. Use this rule when following a derivation that would not let you place a light bulb that could light up a tile given the rules. Usually this is used when the tile is deemed 'empty' already
+Rule is a derivation of rule #2 and the goal state. Use this rule when following a derivation that would not let you place a light bulb that could light Up a tile given the rules. Usually this is used when the tile is deemed 'empty' already
 
 
 ### Too Few Bulbs
