@@ -1,5 +1,5 @@
 # Implementing a New Puzzle
-This page aims to be a straightforward guide for developers in creating a new puzzle for Legup.
+This page aims to be a straightforward guide for developers in creating a new puzzle for LEGUP.
 In this example, we will create <a href="https://en.wikipedia.org/wiki/Nurikabe_(puzzle)">Nurikabe</a>,
 a simple puzzle game played on a rectangular grid.
 
@@ -7,7 +7,7 @@ a simple puzzle game played on a rectangular grid.
 
 ## Organization and Classes
 We begin by creating a new directory under `src/main/java/edu/rpi/legup/puzzle` called `nurikabe`.
-Every puzzle in Legup extends the abstract class `edu.rpi.legup.model.Puzzle`. The constructor and
+Every puzzle in LEGUP extends the abstract class `edu.rpi.legup.model.Puzzle`. The constructor and
 the following abstract methods must be implemented:
 * `public void initializeView()`
 * `public Board generatePuzzle(int difficulty)`
@@ -136,8 +136,8 @@ public class NurikabeBoard extends GridBoard {
 extra convenience methods to their boards, and uniformity justifies making a `NurikabeBoard`.
 
 ## Adding Rules
-Legup allows a user to find a solution by applying simple axioms, or rules. There are
-three types of rules in Legup: basic, case, and contradiction. Basic rules represent a
+LEGUP allows a user to find a solution by applying simple axioms, or rules. There are
+three types of rules in LEGUP: basic, case, and contradiction. Basic rules represent a
 logical continuation of the puzzle solution; case rules represent two possible paths on
 which the solution may go, and create a branch in the proof tree; contradiction rules
 show that a contradiction with the rules of the puzzle has been derived, and kill the
@@ -233,9 +233,9 @@ public class NoNumberContradictionRule extends ContradictionRule {
 }
 ```
 As you can see from the above, in defining `checkContradictionAt()`, we are given a `PuzzleElement`.
-In general, Legup tests for a contradiction *at every cell in the puzzle.* Thus, at a minimum, we only need
+In general, LEGUP tests for a contradiction *at every cell in the puzzle.* Thus, at a minimum, we only need
 to write code to detect the contradiction for one cell involved. The purpose of the parameter, however, is
-actually to allow Legup to find the proper error message for each cell when the rule is
+actually to allow LEGUP to find the proper error message for each cell when the rule is
 applied incorrectly, to report a mistake to the user.
 For example, if the above rule is applied when the region still has empty squares adjacent and
 the user hovers one of the cells, they will see the error "Must be surrounded by black cells".
@@ -702,16 +702,16 @@ the superclass, which detects any `ContradictionRule` subclasses found within th
 
 ## GUI
 Our Nurikabe implementation is not of much use if there is no graphical interface!
-Legup follows the model-view-controller architecture, and we just finished creating
+LEGUP follows the model-view-controller architecture, and we just finished creating
 our model; now we need a view and a controller to interact with it. We begin by
 creating a view for each cell, which we will then aggregate into a larger view for
 the entire board.
 
 *Note.* Much of the following code makes heavy use of the Java AWT library, which is outside
-the purview of this guide. There is, though, no shortage of examples online and within Legup
+the purview of this guide. There is, though, no shortage of examples online and within LEGUP
 for its usage, to which we direct the reader.
 
-Legup comes with two classes which will be especially useful here: `edu.rpi.legup.ui.boardview.GridElementView`
+LEGUP comes with two classes which will be especially useful here: `edu.rpi.legup.ui.boardview.GridElementView`
 and `edu.rpi.legup.ui.boardview.GridBoardView`. We will extend these classes for Nurikabe.
 ```java
 package edu.rpi.legup.puzzle.nurikabe;
@@ -856,8 +856,8 @@ public void initializeView() {
 ```
 
 ## Puzzle Files, Importing, and Exporting
-The final stage in adding our puzzle to Legup is specifying how we will
-store these puzzles in files, and import/export them. Puzzles in Legup are stored as XML
+The final stage in adding our puzzle to LEGUP is specifying how we will
+store these puzzles in files, and import/export them. Puzzles in LEGUP are stored as XML
 files, and we specify the precise rules in our importer. Here is an example of a basic Nurikabe
 file:
 ```xml
@@ -951,7 +951,7 @@ public class NurikabeImporter extends PuzzleImporter {
     }
 }
 ```
-Legup also supports saving partially complete proofs, and we extend `PuzzleExporter` to save the
+LEGUP also supports saving partially complete proofs, and we extend `PuzzleExporter` to save the
 current state of the board.
 ```java
 package edu.rpi.legup.puzzle.nurikabe;
@@ -1066,16 +1066,16 @@ public Nurikabe() {
 }
 ```
 
-Finally, we need to add the new puzzle to Legup's list, so that it recognizes the files.
+Finally, we need to add the new puzzle to LEGUP's list, so that it recognizes the files.
 In `src/main/resources/edu/rpi/legup/legup` in the file `config`, we add the line
 ```xml
 <puzzle name="Nurikabe" qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe" fileType=".xml"/>
 ```
 
-Congratulations, you've added a puzzle to Legup!
+Congratulations, you've added a puzzle to LEGUP!
 
 ## Next Steps
-This tutorial was intended to give a simple overview of the anatomy of a puzzle in Legup. For
+This tutorial was intended to give a simple overview of the anatomy of a puzzle in LEGUP. For
 this reason, certain features were not implemented and comments were removed.
 However, this will (hopefully) have given the reader enough information
 to be able to read and navigate the source code independently, where the wealth of
