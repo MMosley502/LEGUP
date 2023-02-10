@@ -1,4 +1,4 @@
-# Legup Wiki
+# LEGUP Wiki
 * [Home][home]
 * [For Developers][dev]
     * [Programming Standards][standards]
