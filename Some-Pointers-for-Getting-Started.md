@@ -1,10 +1,10 @@
 **Note: if you are reading this and have not followed the [developer setup guide](https://github.com/Bram-Hub/Legup/wiki/Developer-Setup-Guide) yet, please do that first.**
 
-The Legup repository can be daunting at first glance. Here is some general starting information as well as some basics on how to navigate the repository:
+The LEGUP repository can be daunting at first glance. Here is some general starting information as well as some basics on how to navigate the repository:
 
 ## Puzzle Statuses
 ### Fully Functioning
-These are the puzzles that are fully functioning. If you are new to Legup and want to get used to the software, you should first take a look at these puzzles:
+These are the puzzles that are fully functioning. If you are new to LEGUP and want to get used to the software, you should first take a look at these puzzles:
 * Light Up
 * Nurikabe
 * Short Truth Table
