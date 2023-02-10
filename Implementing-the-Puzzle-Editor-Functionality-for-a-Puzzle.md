@@ -4,7 +4,7 @@
 
 
 ## Temporarily Disabling Puzzle File Creation
-We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within Legup from accidentally accessing this in-progress functionality.
+We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within LEGUP from accidentally accessing this in-progress functionality.
 
 Navigate to `bin/main/edu/rpi/legup/legup/config` and add the following under the last puzzle:
 
