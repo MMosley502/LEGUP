@@ -22,7 +22,7 @@ While the screenshots provided were taken on a laptop running Windows 10, these 
 ## Common Issues
 [Java is not installed](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide/_edit#java-is-not-installed)
 
-[Legup jar file defaults to Internet Explorer (or another application)](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#legup-jar-file-defaults-to-internet-explorer-or-another-application)
+[LEGUP jar file defaults to Internet Explorer (or another application)](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#legup-jar-file-defaults-to-internet-explorer-or-another-application)
 
 ### Java is not installed
 If you are absolutely sure that Java is not installed, you can skip straight to the last step, which contains [the link to install Java](https://java.com/en/download/). If you're not 100% sure, you can start from the first step to verify whether or not Java is installed.
@@ -47,7 +47,7 @@ Below is a sample screenshot of the error message that would appear if Java is n
 
 3. If Java is not installed, go to https://java.com/en/download/ and follow the instructions on the website. Once that is done, you should be able to open the `Legup.jar` file without problems.
 
-### Legup jar file defaults to Internet Explorer (or another application)
+### LEGUP jar file defaults to Internet Explorer (or another application)
 1. Right click the `Legup.jar` file. A menu should pop up, and you should see an option that reads `Open with...`. (See image below for clarification.)
 
 <img src="https://i.ibb.co/k9K1h0h/image.png" width="400">
@@ -64,14 +64,14 @@ Below is a sample screenshot of the error message that would appear if Java is n
 [Unidentified developer](https://github.com/Bram-Hub/Legup/wiki/User-Setup-Guide#unidentified-developer)
 
 ### Unable to locate Java Runtime
-When running the Legup jar you may be presented with this message:
+When running the LEGUP jar you may be presented with this message:
 
 <img width="269" alt="image" src="https://user-images.githubusercontent.com/55092742/173092677-a2bc03a5-28b9-478c-b128-a3393fbf8ba9.png">
 
 If you see this message, please go to the [Java download page](https://java.com/en/download/). Download and install Java then you should be able to run the application.
 
 ### Unidentified developer
-When running the Legup jar you may be presented with this message:
+When running the LEGUP jar you may be presented with this message:
 
 <img width="266" alt="image" src="https://user-images.githubusercontent.com/55092742/173093717-0aa7535e-8565-4e76-95e2-43ff6eed3b06.png">
 
@@ -79,4 +79,4 @@ If you see this message do the following:
 1. Open Finder and navigate where you Legup.jar is located
 2. Right click the Legup.jar
 3. Hold down the option key and click "Open"
-4. Now you can click Open on the new message and Legup should be running
+4. Now you can click Open on the new message and LEGUP should be running
