@@ -1,4 +1,4 @@
-# Enable Puzzle File Creation for your New Puzzle
+# Enable Puzzle File Creation for your New Puzzle (WIP page and functionality)
 1. [Temporarily disabling puzzle file creation](#temporarily-disabling-puzzle-file-creation)
 2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
 
@@ -86,6 +86,22 @@ public boolean isValidDimensions(int rows, int columns) {
 ```
 
 ......More steps in between......
+
+To support a new puzzle:
+- make the tile "Element" classes for that puzzle (NonPlaceableElements and PlaceableElements)
+- these files will go in the •elements' folder of their specified game (src/main/java.edu/rpi/legup/puzzle/game name (ex.
+nurikabe) /elements)
+- base these classes off of the ones from nurikabe and treetent if you need help
+- make sure they inheret from NonPlaceableElement if the element is non-placeable, and from PlaceableElements if its placable
+(you will need to know how each game works to make this distinction)
+- change the fields passed in to the constructor to describe the puzzle element
+- these should get the buttons with the selected images to appear When you open a puzzle Of that type in the editor
+- you will also have to change the mouse event methods in the classes
+(src/main/java.edu/rpi/legup/puzzle/ game name (ex. nurikabe))
+- there may also be other incompatabilities that should be easy to track down through errors that tell you something is null,
+usually its just a result of something from the proof solver not being set properly because the puzzle editor doesn't make all the
+proof editor stuff (like the proof tree)
+that was my strategy, but the other puzzle editor guys probably have more details and better ways to do things
 
 ## Enabling Puzzle File Creation
 Now, you are ready to enable the puzzle file creation! Navigate back to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`.
