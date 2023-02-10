@@ -7,17 +7,17 @@ For this setup guide, we will be using IntelliJ IDEA and GitHub Desktop. You can
 ## Installing IntelliJ IDEA
 Visit the following page to download IntelliJ IDEA: https://www.jetbrains.com/idea/download/#section=windows
 
-There are two versions of IntelliJ IDEA: IntelliJ IDEA Ultimate and IntelliJ IDEA Community. You can see the differences between the Ultimate and Community versions on the installation page. For Legup development, the Community edition is all we will need, since we will never make use of the features present in the Ultimate version. However, if you are a student and you still want to get the Ultimate version (as well as other IDEs, such as PyCharm, by JetBrains) for free, visit the following page to apply for a free educational license: https://www.jetbrains.com/community/education/#students
+There are two versions of IntelliJ IDEA: IntelliJ IDEA Ultimate and IntelliJ IDEA Community. You can see the differences between the Ultimate and Community versions on the installation page. For LEGUP development, the Community edition is all we will need, since we will never make use of the features present in the Ultimate version. However, if you are a student and you still want to get the Ultimate version (as well as other IDEs, such as PyCharm, by JetBrains) for free, visit the following page to apply for a free educational license: https://www.jetbrains.com/community/education/#students
 
 ## Installing GitHub Desktop
 Visit the following page to download GitHub Desktop: https://desktop.github.com/
 
-To set up GitHub Desktop, follow Parts 1 and 2 of the [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) guide. Part 3 is about contributing to projects and adding and cloning repositories, but this setup guide will walk you through this process for Legup.
+To set up GitHub Desktop, follow Parts 1 and 2 of the [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) guide. Part 3 is about contributing to projects and adding and cloning repositories, but this setup guide will walk you through this process for LEGUP.
 
 ## Forking the Repository
 Most of the work you will doing will be in your forked repository. Follow the following steps to fork the main repository:
 
-1. Go to the the main Legup repository: https://github.com/Bram-Hub/Legup
+1. Go to the the main LEGUP repository: https://github.com/Bram-Hub/Legup
 2. Press the "Fork" button on the top right side of the page.
 3. Once you have created your own fork, navigate to it, click the green "Code" button, then press the clipboard to copy your repository's link.
 
@@ -33,14 +33,14 @@ The one operation that GitHub Desktop cannot do is syncing your forked repositor
 ## Opening the Project within IntelliJ
 After opening IntelliJ, click on the "Open" button. Navigate to `C:\Users\your_username\Documents\GitHub\Legup` (or if you changed the path in the previous step, whatever path you changed it to) and open the folder. After a few moments, IntelliJ should open the project up. 
 
-In the bottom right hand corner, a popup will appear saying that it found a Gradle script. Gradle is a tool used by Legup to build the code. Press the "Import Gradle Project" button. After about a minute, IntelliJ will import the Gradle commands needed for Legup. 
+In the bottom right hand corner, a popup will appear saying that it found a Gradle script. Gradle is a tool used by LEGUP to build the code. Press the "Import Gradle Project" button. After about a minute, IntelliJ will import the Gradle commands needed for LEGUP. 
 
-To verify that everything worked, press the "Project" button on the left sidebar followed by the "Legup" button (this shows you all the files and folders in the Legup project). Your window should look similar to this:
+To verify that everything worked, press the "Project" button on the left sidebar followed by the "LEGUP" button (this shows you all the files and folders in the LEGUP project). Your window should look similar to this:
 
 ![](https://i.ibb.co/S3dtrhP/legup-clone.png)
 
-## Running Legup
-To run Legup, you must build the project into a `.jar` file and then run the newly made file. 
+## Running LEGUP
+To run LEGUP, you must build the project into a `.jar` file and then run the newly made file. 
 
 Using IntelliJ, go to the Gradle window on the right side and run `Legup > Tasks > build > jar`. A terminal should appear at the bottom of the screen, and after a few minutes the terminal should print `Task execution finished 'jar'` (if the task never finishes successfully, you need to do some debugging). On the code navigation window, navigate to `Legup/build/libs`.
 
@@ -48,7 +48,7 @@ NOTE: If the Legup.jar file or the build folder does not appear after running th
 
 ![](https://i.ibb.co/jMDCK06/jar-location.png)
 
-Right click the `Legup.jar` file and then press "Run 'Legup.jar'" to launch your build of Legup.
+Right click the `Legup.jar` file and then press "Run 'Legup.jar'" to launch your build of LEGUP.
 
 ## Setting Up checkstyle within IntelliJ
 ### Installing the CheckStyle Plugin
@@ -58,13 +58,13 @@ Within IntelliJ, click on `File > Settings`. After the settings dialog pops up, 
 
 After installing the plugin, click on `File > Settings`. After the settings dialog pops up, click on "Tools" on the menu on the left side and then click on "Checkstyle". By default, there should be two default configuration files: "Sun Checks" and "Google Checks". 
 
-Click on the "+" button to add a configuration. Set the description field to "Legup". Select "Use a local Checkstyle file". Browse for the Legup checkstyle file. From the repository root, the path for the Legup checkstyle file should be `.idea/checkstyle-idea.xml`.
+Click on the "+" button to add a configuration. Set the description field to "Legup". Select "Use a local Checkstyle file". Browse for the LEGUP checkstyle file. From the repository root, the path for the LEGUP checkstyle file should be `.idea/checkstyle-idea.xml`.
 
 ### Testing Your CheckStyle Setup
 At the bottom of IntelliJ, you should have seen a bar that includes options such as "Git", "Run", "TODO", "Problems", and more. "CheckStyle" should now also be added to those options. Click on "CheckStyle", and then set the active configuration to "Legup". On the left, click on "Check Project" to check the entire project. You'll be able to see all the problems with your code formatting after the check is complete.
 
 ### Reformatting
-In order to fix any issues with your formatting, the easiest way to do this is to right click the Legup source folder and click "Reformat Code". This will reformat the all the code within the repository to meet the CheckStyle standards.
+In order to fix any issues with your formatting, the easiest way to do this is to right click the LEGUP source folder and click "Reformat Code". This will reformat the all the code within the repository to meet the CheckStyle standards.
 
 Additionally, in the future, as you code, you can use the shortcut `Ctrl+Alt+L` to reformat the file you are working on.
 
