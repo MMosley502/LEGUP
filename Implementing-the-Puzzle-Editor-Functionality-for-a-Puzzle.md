@@ -88,20 +88,14 @@ public boolean isValidDimensions(int rows, int columns) {
 ......More steps in between......
 
 To support a new puzzle:
-- make the tile "Element" classes for that puzzle (NonPlaceableElements and PlaceableElements)
-- these files will go in the •elements' folder of their specified game (src/main/java.edu/rpi/legup/puzzle/game name (ex.
-nurikabe) /elements)
-- base these classes off of the ones from nurikabe and treetent if you need help
-- make sure they inheret from NonPlaceableElement if the element is non-placeable, and from PlaceableElements if its placable
-(you will need to know how each game works to make this distinction)
-- change the fields passed in to the constructor to describe the puzzle element
-- these should get the buttons with the selected images to appear When you open a puzzle Of that type in the editor
-- you will also have to change the mouse event methods in the classes
-(src/main/java.edu/rpi/legup/puzzle/ game name (ex. nurikabe))
-- there may also be other incompatabilities that should be easy to track down through errors that tell you something is null,
-usually its just a result of something from the proof solver not being set properly because the puzzle editor doesn't make all the
-proof editor stuff (like the proof tree)
-that was my strategy, but the other puzzle editor guys probably have more details and better ways to do things
+- make the tile "Element" classes for that puzzle (`NonPlaceableElements` and `PlaceableElements`)
+- These files will go in the `elements` folder of their specified game `src/main/java.edu/rpi/legup/puzzle/gamename(eg: Nurikabe)`
+- Base these classes off of the ones from Nurikabe and Tree Tent if you need help
+- Make sure they inherit from `NonPlaceableElement` if the element is non-placeable, and from `PlaceableElements` if its placeable (this differs game to game)
+- Change the fields passed in to the constructor to describe the puzzle element
+- These should get the buttons with the selected images to appear when you open a puzzle Of that type in the editor
+- You will also have to change the mouse event methods in the classes `src/main/java.edu/rpi/legup/puzzle/gamename(eg. Nurikabe)`
+- There may also be other incompatibilities that should be easy to track down through errors that tell you something is null. This is usually caused by the puzzle editor not creating all the proof editor stuff (like the proof tree) from the proof solver.
 
 ## Enabling Puzzle File Creation
 Now, you are ready to enable the puzzle file creation! Navigate back to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`.
