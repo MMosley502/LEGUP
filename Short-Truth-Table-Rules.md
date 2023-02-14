@@ -63,7 +63,7 @@ Clicking on a red block will color it gray.
 ## Basic rules
 
 
-### Atomic Rule
+### True or False Rule
 
 [![Hn3hHZu.jpg](https://iili.io/Hn3hHZu.jpg)](https://freeimage.host/)
 
