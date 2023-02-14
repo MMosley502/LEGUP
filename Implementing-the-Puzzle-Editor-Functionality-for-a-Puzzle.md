@@ -85,9 +85,7 @@ public boolean isValidDimensions(int rows, int columns) {
 }
 ```
 
-......More steps in between......
-
-To support a new puzzle:
+......More steps in between, but tldr to support a new puzzle:
 - make the tile "Element" classes for that puzzle (`NonPlaceableElements` and `PlaceableElements`)
 - These files will go in the `elements` folder of their specified game `src/main/java.edu/rpi/legup/puzzle/gamename(eg: Nurikabe)`
 - Base these classes off of the ones from Nurikabe and Tree Tent if you need help
