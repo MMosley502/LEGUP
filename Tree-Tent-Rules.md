@@ -12,7 +12,7 @@ Clicking on a tent tile returns it to being unfilled.
 
 1) Each tent is attached to one tree (so the number of tents and trees are equal).
 
-2) The numbers across the top and down the side show how many tents are in the respective row or column.
+2) The numbers down the side show how many tents are in the respective row or column.
 
 3) A tent can only be placed horizontally or vertically adjacent to a tree.
 
