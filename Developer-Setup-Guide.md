@@ -19,9 +19,9 @@ Most of the work you will doing will be in your forked repository. Follow the fo
 
 1. Go to the the main LEGUP repository: https://github.com/Bram-Hub/Legup
 2. Press the "Fork" button on the top right side of the page.
-3. Once you have created your own fork, navigate to it, click the green "Code" button, then press the clipboard to copy your repository's link.
+3. When forking, uncheck the box saying to fork from the default branch only; dev work should be done on the `dev` branch then pushed into the dev branch of the original LEGUP
 
-![](https://i.ibb.co/N6D2dTb/fork.png)
+![image](https://user-images.githubusercontent.com/96987732/226029642-c2393e24-8234-4af4-a74a-fd4368953c29.png)
 
 ## Downloading the Project
 Once the link to your forked version has been copied, you must [clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) it onto your computer. 
