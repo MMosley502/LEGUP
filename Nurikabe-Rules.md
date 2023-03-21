@@ -1,4 +1,4 @@
-# Nurikabe 
+# Nurikabe (WIP)
 Nurikabe is a puzzle with unfilled squares shown in gray. Your task is to color all the cells white or black according to the rules of the game
 
 Clicking on a gray tile first makes it white
