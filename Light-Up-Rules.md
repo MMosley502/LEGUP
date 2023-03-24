@@ -1,5 +1,5 @@
-# Light Up
-Light Up is a puzzle with unfilled squares shown in gray. Your task is to ensure all non-black tiles are lit up with light bulbs.
+# Light Up (WIP)
+Light Up is a puzzle with unfilled squares shown in gray. The goal is to light up every cell in the grid by placing light bulbs in some of the cells.
 
 Clicking on an unfilled tile places a light bulb and colors the area it lights up yellow
 
@@ -7,14 +7,20 @@ Clicking on a light bulb replaces it with an "empty" tile, represented by a blac
 
 Clicking on a "empty" tile returns it to being unfilled
 
+### Definitions specific to light up
+1. Light bulb: a cell from which light is emitted in straight lines from. A bulb cannot be in another’s light path. This is a cell state.
+2. Light path: A direct line of sight to a light bulb. This is not a cell state which the user can directly add; it is automatically added when a light bulb is placed. Light is stopped by black blocks which are fixed on the board.
+
+
 # Rules
 ### Here are the direct rules of the puzzle
 
-1) Light bulbs light Up ALL tiles on its row and column unless blocked by a black tile.
+1. A cell either has a bulb or is empty
+2. Each cell must be lit by a light
+3. Each numbered black block must have exactly that many bulbs around it
+4. No bulb can be in another’s light path.
+5. Light is emitted from a straight line from a bulb, stopped by blocks, in the four adjacent directions.(automatic)
 
-2) Light bulbs cannot shine lights on each other
-
-3) Black tiles with numbers (0 to 4) must have that many light bulbs located cardinal adjacent to them (no diagonals)
 
 # LEGUP Proof Rules
 ## Direct Rules
@@ -24,7 +30,7 @@ Clicking on a "empty" tile returns it to being unfilled
 
 [![bkcqiB.th.jpg](https://iili.io/bkcqiB.th.jpg)](https://freeimage.host/i/bkcqiB)
 
-Rule comes directly from Rule #2. Use this rule to place "empty" tiles on all tiles that are being shined on
+Rule comes directly from Rule #2. Any unknown lit cell must be empty
 
 ### Empty Corners
 
@@ -36,13 +42,13 @@ This rule is a derivation of Rules #1 and #3. Use this rule to place "empty" til
 
 [![bkcTOJ.th.jpg](https://iili.io/bkcTOJ.th.jpg)](https://freeimage.host/i/bkcTOJ)
 
-Rule comes directly from Rule #3. Use this rule to place light bulbs on the remaining adjacent tiles to fulfil light bulb requirement
+Rule comes directly from Rule #3. If the sum of a block’s unknown cells and its light bulb cells equals its number, then the unknown cells must contain bulbs 
 
 ### Finish with Empty
 
 [![bkcERs.th.jpg](https://iili.io/bkcERs.th.jpg)](https://freeimage.host/i/bkcERs)
 
-Rule comes directly from Rule #3. Use this rule to place "empty" tiles on the remaining adjacent tiles to fulfil light bulb requirement
+Rule comes directly from Rule #3. If a block with a number has as many light bulbs around it as its number, the other cells around it must not contain a light bulb and therefore be empty
 
 ### Must Light
 
@@ -58,7 +64,7 @@ Rule is a derivation of the goal. Use this rule to place a light bulb if there i
 
 Rule comes directly from Rule #2. Use this rule when following a derivation that requires a light bulb to be placed in a lit tile.
 
-### Cannot Light Cell
+### Cannot Light Cell? (Why cant use must light?)
 
 [![bkcOg9.th.jpg](https://iili.io/bkcOg9.th.jpg)](https://freeimage.host/i/bkcOg9)
 
