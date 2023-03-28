@@ -64,7 +64,7 @@ Rule is a derivation of the goal. Use this rule to place a light bulb if there i
 
 Rule comes directly from Rule #2. Use this rule when following a derivation that requires a light bulb to be placed in a lit tile.
 
-### Cannot Light Cell? (Why cant use must light?)
+### Cannot Light Cell
 
 [![bkcOg9.th.jpg](https://iili.io/bkcOg9.th.jpg)](https://freeimage.host/i/bkcOg9)
 
