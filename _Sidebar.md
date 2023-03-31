@@ -13,7 +13,7 @@
         * [Troubleshooting on macOS][macos_troubleshooting]
     * [Tutorial][legup_tutorial]
         * [Nurikabe Tutorial][nurikabe_tutorial]
-            * [Nurikabe Strategies][nurikabe_strategies]
+            * [Nurikabe Strategy Guide][nurikabe_strategies]
         * [Light Up Tutorial][light_up_tutorial]
         * [Tree Tent Tutorial][Tree_Tent_tutorial]
         * [Skyscrapers Tutorial][Skyscrapers_tutorial]
@@ -32,7 +32,7 @@
 [windows_installer_compilation]: https://github.com/Bram-Hub/Legup/wiki/Windows-Installer-Compilation
 [legup_tutorial]: https://github.com/Bram-Hub/Legup/wiki/LEGUP-Tutorial
 [nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
-[nurikabe_strategies]: https://github.com/Bram-Hub/LEGUP/wiki/Nurikabe-Strategy
+[nurikabe_strategies]: https://github.com/Bram-Hub/LEGUP/wiki/Nurikabe-Strategy-Guide
 [light_up_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Light%20up-Rules
 [Tree_Tent_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Tree-Tent-Rules
 [Skyscrapers_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Skyscrapers-Rules
