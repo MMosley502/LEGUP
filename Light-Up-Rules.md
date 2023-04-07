@@ -1,4 +1,4 @@
-# Light Up (Tutorial WIP, but functional)
+# Light Up
 Light Up is a puzzle with unfilled squares shown in gray. The goal is to light up every cell in the grid by placing light bulbs in some of the cells.
 
 Clicking on an unfilled tile places a light bulb and colors the area it lights up yellow
