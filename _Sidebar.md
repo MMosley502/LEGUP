@@ -15,6 +15,7 @@
         * [Nurikabe Tutorial][nurikabe_tutorial]
             * [Nurikabe Strategy Guide][nurikabe_strategies]
         * [Light Up Tutorial][light_up_tutorial]
+            * [Light up Advanced Forward rules][light_up_strategies]
         * [Tree Tent Tutorial][Tree_Tent_tutorial]
         * [Skyscrapers Tutorial][Skyscrapers_tutorial]
         * [Short Truth Table Tutorial][Short-Truth-Table_tutorial]
@@ -34,6 +35,7 @@
 [nurikabe_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Nurikabe-Rules
 [nurikabe_strategies]: https://github.com/Bram-Hub/LEGUP/wiki/Nurikabe-Strategy-Guide
 [light_up_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Light%20up-Rules
+[light_up_strategies]: https://github.com/Bram-Hub/LEGUP/wiki/Light-up-Forward-rules
 [Tree_Tent_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Tree-Tent-Rules
 [Skyscrapers_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Skyscrapers-Rules
 [Short-Truth-Table_tutorial]: https://github.com/Bram-Hub/Legup/wiki/Short-Truth-Table-Rules
