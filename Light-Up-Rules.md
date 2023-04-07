@@ -41,7 +41,7 @@ Relative to an unlit cell, at least one of the unknown (and unlit, to reduce the
 
 [![bkcdAb.th.jpg](https://iili.io/bkcdAb.th.jpg)](https://freeimage.host/i/bkcdAb)
 
-Rule comes directly from Rule #2. Use this rule when following a derivation that requires a light bulb to be placed in a lit tile.
+Rule comes directly from Rule #2. There is no derivation to avoid a light bulb to be placed in a lit path.
 
 ### Cannot Light Cell
 
@@ -59,7 +59,7 @@ Rule comes directly from Rule #3. There is no way to satisfy a number in a black
 
 [![bkc4sV.th.jpg](https://iili.io/bkc4sV.th.jpg)](https://freeimage.host/i/bkc4sV)
 
-Rule comes directly from Rule #3. Use this rule when following a derivation that leads to a black tile being surrounded by more light bulbs than required
+Rule comes directly from Rule #3. There is no way to lower the number of bulbs to match the black square that they surround
 
 ## Direct Rules
 ### Empty Cells in Light
