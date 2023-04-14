@@ -85,14 +85,28 @@ public boolean isValidDimensions(int rows, int columns) {
 }
 ```
 
-More steps in between, but TLDR to support a new puzzle:
+TODO:
 - Make the tile "Element" classes for that puzzle (`NonPlaceableElements` and `PlaceableElements`)
 - These files will go in the `elements` folder of their specified game `src/main/java.edu/rpi/legup/puzzle/gamename(eg: Nurikabe)`
 - Base these classes off of the ones from Nurikabe and Tree Tent if you need help
 - Make sure they inherit from `NonPlaceableElement` if the element is non-placeable, and from `PlaceableElements` if its placeable (this differs game to game)
 - Change the fields passed in to the constructor to describe the puzzle element
 - These should get the buttons with the selected images to appear when you open a puzzle Of that type in the editor
-- You will also have to change the mouse event methods in the classes `src/main/java.edu/rpi/legup/puzzle/gamename(eg. Nurikabe)`
+
+If the puzzle only accepts row and column input:
+- In the puzzle importer's class (e.g. `NurikabeImporter.java`):
+    - Make sure that `initializeBoard(String[] statements)` immediately throws an UnsupportedOperationException
+    - Implement `initializeBoard(int rows, int columns)` to create an empty puzzle board (add NurikabeImporter example)
+    - Make sure acceptsRowsAndColumnsInput() returns true and acceptsTextInput() returns false
+
+If the puzzle only accepts text input:
+- In the puzzle importer's class (e.g. `ShortTruthTable.java`)
+    - Make sure that `initializeBoard(int rows, int columns)` immediately throws an UnsupportedOperationException
+    - Implement `initializeBoard(String[] statementInput)` however is fit for the puzzle
+    - Make sure acceptsTextInput() returns true and acceptsRowsAndColumnsInput() returns false
+
+- Create a new method `setType()` in the puzzle class (e.g. `Nurikabe.java`, `ShortTruthTable.java`) that deals with how to handle these element IDs
+
 - There may also be other incompatibilities that should be easy to track down through errors that tell you something is null. This is usually caused by the puzzle editor not creating all the proof editor stuff (like the proof tree) from the proof solver.
 
 ## Enabling Puzzle File Creation
