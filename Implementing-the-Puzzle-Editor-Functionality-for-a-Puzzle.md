@@ -97,13 +97,14 @@ If the puzzle only accepts row and column input:
 - In the puzzle importer's class (e.g. `NurikabeImporter.java`):
     - Make sure that `initializeBoard(String[] statements)` immediately throws an UnsupportedOperationException
     - Implement `initializeBoard(int rows, int columns)` to create an empty puzzle board (add NurikabeImporter example)
-    - Make sure acceptsRowsAndColumnsInput() returns true and acceptsTextInput() returns false
+    - Make sure `acceptsRowsAndColumnsInput()` returns true and `acceptsTextInput()` returns false
 
 If the puzzle only accepts text input:
 - In the puzzle importer's class (e.g. `ShortTruthTable.java`)
     - Make sure that `initializeBoard(int rows, int columns)` immediately throws an UnsupportedOperationException
     - Implement `initializeBoard(String[] statementInput)` however is fit for the puzzle
-    - Make sure acceptsTextInput() returns true and acceptsRowsAndColumnsInput() returns false
+    - Make sure `acceptsTextInput()` returns true and `acceptsRowsAndColumnsInput()` returns false
+    - Implement `isValidTextInput(String[] statements)` in the puzzle class (e.g. `ShortTruthTable.java`) if the default behavior in `Puzzle.java` is not sufficient
 
 - Create a new method `setType()` in the puzzle class (e.g. `Nurikabe.java`, `ShortTruthTable.java`) that deals with how to handle these element IDs
 
