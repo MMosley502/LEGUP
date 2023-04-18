@@ -88,14 +88,14 @@ public boolean isValidDimensions(int rows, int columns) {
 ## Creating Tiles
 For each puzzle, you will need to create two types of tiles: ones that support placeable elements and ones that support non-placeable elements. A placeable element is any element a user can place down on the board while working in the proof editor. A non-placeable element is any element a user cannot place down on the board while working in the proof editor. For example, in Nurikabe specifically, `BlackTile` and `WhiteTile` will be placeable elements while `NumberTile` will be a non-placeable element.
 
-For each tile, the following steps must be completed:
+All tiles must go in the corresponding `elements` folder for the corresponding puzzle (`src/main/java.edu/rpi/legup/puzzle/<PUZZLE_NAME>/elements`). For each tile, the following steps must be completed:
 1. The class must inherit from `PlaceableElements` or `NonPlaceableElement`.
-2. An ID must be assigned to the tile and specified in the `<PUZZLE_NAME>_elements_reference_sheet.txt`, which is also stored at `src/main/java.edu/rpi/legup/puzzle/nurikabe/elements`.
+2. An ID must be assigned to the tile and specified in the `<PUZZLE_NAME>_elements_reference_sheet.txt` (which should be located at `src/main/java.edu/rpi/legup/puzzle/<PUZZLE_NAME>/elements`).
 3. An icon for the tile must be created and stored in the folder located at `edu/rpi/legup/images/<PUZZLE_NAME>/tiles`.
 4. A name and description for the tile must be passed into the constructor.
 
 ### Example: Creating the `BlackTile` Class
-All tiles must go in the corresponding `elements` folder for the corresponding puzzle. For example, for Nurikabe, we will create the `BlackTile` class in the following folder: `src/main/java.edu/rpi/legup/puzzle/nurikabe/elements`.
+For Nurikabe, we will create the `BlackTile` class in the following folder: `src/main/java.edu/rpi/legup/puzzle/nurikabe/elements`.
 
 Here is what `BlackTile.java` should look like:
 ```java
@@ -109,7 +109,9 @@ public class BlackTile extends PlaceableElement {
     }
 }
 ```
-And this is what `nurikabe_elements_reference_sheet.txt` should look like:
+Note that `BlackTile.png` is an image file containing the icon that will be used for this element.
+
+Next, this is what `nurikabe_elements_reference_sheet.txt` should look like after we created `BlackTile.java`:
 ```
 NURI-PLAC-0001 : BlackTile
 ```
