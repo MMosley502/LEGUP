@@ -119,6 +119,35 @@ NURI-PLAC-0001 : BlackTile
 ```
 
 ## Initializing an Empty Puzzle From Row and Column Input
+For this step, all sample code excerpts will use Nurikabe.
+
+First, verify that the puzzle's importer class has `acceptsRowsAndColumnsInput()` return true and `acceptsTextInput()` return false. Change these methods to return the corresponding values if they do not already.
+
+Next, verify that the puzzle's importer class throws an `UnsupportedOperationException` for `initializeBoard(String[] statements)`. To keep all error messages consistent, please have the `UnsupportedOperationException`'s error message read "<PUZZLE_NAME> cannot accept text input".
+```java
+public class NurikabeImporter extends PuzzleImporter {
+    public NurikabeImporter(Nurikabe nurikabe) {
+        super(nurikabe);
+    }
+
+    @Override
+    public boolean acceptsRowsAndColumnsInput() {
+        return true;
+    }
+
+    @Override
+    public boolean acceptsTextInput() {
+        return false;
+    }
+
+    @Override
+    public void initializeBoard(String[] statements) throws InputMismatchException {
+        throw new InputMismatchException("Nurikabe cannot accept text input");
+    }
+    
+    // Rest of implementation not shown
+}
+```
 
 ## Initializing an Empty Puzzle From Text Input
 ***For most puzzles, you will never need to and should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Most puzzles will only need to be initialized with a row and column input. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
