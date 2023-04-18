@@ -1,7 +1,7 @@
 # Enable Puzzle File Creation for your New Puzzle (WIP page and functionality)
 1. [Temporarily disabling puzzle file creation](#temporarily-disabling-puzzle-file-creation)
 2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
-
+3. [Creating Tiles](#creating-tiles)
 
 ## Temporarily Disabling Puzzle File Creation
 We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within LEGUP from accidentally accessing this in-progress functionality.
