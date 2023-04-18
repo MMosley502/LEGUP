@@ -121,6 +121,7 @@ NURI-PLAC-0001 : BlackTile
 ## Initializing an Empty Puzzle From Row and Column Input
 
 ## Initializing an Empty Puzzle From Text Input
+***Please note: for most puzzles, you will never need to and probably should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Most puzzles will only need to be initialized with a row and column input. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
 
 TODO:
 -
