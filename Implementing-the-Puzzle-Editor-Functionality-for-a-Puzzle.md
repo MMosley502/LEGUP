@@ -85,6 +85,9 @@ public boolean isValidDimensions(int rows, int columns) {
 }
 ```
 
+## Creating Tiles
+For each puzzle you will need to create two types of tiles: ones that support placeable elements and ones that support non-placeable elements. A placeable element is any element a user can place down on the board while working in the proof editor. A non-placeable element is any element a user cannot place down on the board while working in the proof editor. For example, in Nurikabe specifically, `BlackTile` and `WhiteTile` will be placeable elements while `NumberTile` will be a non-placeable element.
+
 TODO:
 - Make the tile "Element" classes for that puzzle (`NonPlaceableElements` and `PlaceableElements`)
 - These files will go in the `elements` folder of their specified game `src/main/java.edu/rpi/legup/puzzle/gamename(eg: Nurikabe)`
