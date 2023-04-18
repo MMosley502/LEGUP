@@ -118,6 +118,8 @@ Next, this is what `nurikabe_elements_reference_sheet.txt` should look like afte
 NURI-PLAC-0001 : BlackTile
 ```
 
+Note that each puzzle must have a `UnknownTile.java` class, which allows users to clear cells on the board in the puzzle editor. For an example, see `src/main/java.edu/rpi/legup/puzzle/nurikabe/elements/UnknownTile.java`.
+
 ## Initializing an Empty Puzzle From Row and Column Input
 For this step, all sample code excerpts will use Nurikabe.
 
