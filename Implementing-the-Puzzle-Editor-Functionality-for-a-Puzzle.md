@@ -2,6 +2,8 @@
 1. [Temporarily disabling puzzle file creation](#temporarily-disabling-puzzle-file-creation)
 2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
 3. [Creating Tiles](#creating-tiles)
+4. [Initializing an Empty Puzzle From Row and Column Input](#initializing-an-empty-puzzle-from-row-and-column-input)
+5. [Initializing an Empty Puzzle From Text Input](#initializing-an-empty-puzzle-from-text-input)
 
 ## Temporarily Disabling Puzzle File Creation
 We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within LEGUP from accidentally accessing this in-progress functionality.
@@ -115,6 +117,10 @@ Next, this is what `nurikabe_elements_reference_sheet.txt` should look like afte
 ```
 NURI-PLAC-0001 : BlackTile
 ```
+
+## Initializing an Empty Puzzle From Row and Column Input
+
+## Initializing an Empty Puzzle From Text Input
 
 TODO:
 -
