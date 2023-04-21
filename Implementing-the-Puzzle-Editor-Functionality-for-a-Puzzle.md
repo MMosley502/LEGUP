@@ -295,38 +295,38 @@ public class CreatePuzzleDialog extends JDialog {
 Finally, modify the `okButtonListener` so that it checks if the field is unfilled if the current selected puzzle is the puzzle accepting text dialog. Also modify the action event so that `homePanel` opens the puzzle with the text input.
 ``` java
 private ActionListener okButtonListener = new ActionListener() {
-        /**
-         * Attempts to open the puzzle editor interface for the given game with the given dimensions
-         * @param ae the event to be processed
-         */
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            String game = Config.convertDisplayNameToClassName((String) gameBox.getSelectedItem());
+    /**
+     * Attempts to open the puzzle editor interface for the given game with the given dimensions
+     * @param ae the event to be processed
+     */
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        String game = Config.convertDisplayNameToClassName((String) gameBox.getSelectedItem());
 
-            // Check if all 3 TextFields are filled
-            if (game.equals("ShortTruthTable") && textArea.getText().equals("")) {
-                System.out.println("Unfilled fields");
-                return;
-            }
-            if (!game.equals("ShortTruthTable") && (game.equals("") || rows.getText().equals("") || columns.getText().equals(""))) {
-                // Game does not accept text input (implementation is not shown)
-            }
-
-            try {
-                if (game.equals("ShortTruthTable")) {
-                    homePanel.openEditorWithNewPuzzle("ShortTruthTable", textArea.getText().split("\n"));
-                }
-                else {
-                    // Open edit with row and column input (implementation not shown)
-                }
-                setVisible(false);
-            }
-            catch (IllegalArgumentException e) {
-                System.out.println("Failed to open editor with new puzzle");
-                e.printStackTrace(System.out);
-            }
+        // Check if all 3 TextFields are filled
+        if (game.equals("ShortTruthTable") && textArea.getText().equals("")) {
+            System.out.println("Unfilled fields");
+            return;
         }
-    };
+        if (!game.equals("ShortTruthTable") && (game.equals("") || rows.getText().equals("") || columns.getText().equals(""))) {
+            // Game does not accept text input (implementation is not shown)
+        }
+
+        try {
+            if (game.equals("ShortTruthTable")) {
+                homePanel.openEditorWithNewPuzzle("ShortTruthTable", textArea.getText().split("\n"));
+            }
+            else {
+                // Open edit with row and column input (implementation not shown)
+            }
+            setVisible(false);
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("Failed to open editor with new puzzle");
+            e.printStackTrace(System.out);
+        }
+    }
+};
 ```
 
 ### Initializing an Empty Board
