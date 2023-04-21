@@ -1,11 +1,12 @@
 # Enable Puzzle File Creation for your New Puzzle (WIP page and functionality)
 1. [Enabling puzzle file creation](#enable-puzzle-file-creation)
 2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
-3. [Creating Tiles](#creating-tiles)
-4. Initializing an Empty Puzzle (CHOOSE ONE)
-    * [From Row and Column Input](#initializing-an-empty-puzzle-from-row-and-column-input)
-    * [From Text Input](#initializing-an-empty-puzzle-from-text-input)
-5. [Implementing Cell Modification Functionality](#implementing-cell-modification-functionality)
+3. [Creating tiles](#creating-tiles)
+4. Initializing an empty puzzle (CHOOSE ONE)
+    * [From row and column input](#initializing-an-empty-puzzle-from-row-and-column-input)
+    * [From text input](#initializing-an-empty-puzzle-from-text-input)
+5. [Implementing cell modification functionality](#implementing-cell-modification-functionality)
+6. [Implementing the ability to save files](#implementing-the-ability-to-save-and-open-files)
 
 ## Enabling Puzzle File Creation
 Navigate to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`. For example, if we want to enable file creation for Nurikabe, and the configurations file looked like this...
@@ -416,6 +417,9 @@ public class NurikabeCell extends GridCell<Integer> {
     // Rest of implementation not shown
 }
 ```
+
+## Implementing the Ability to Save Files
+Under construction, please come back later...
 
 # End of Tutorial
 Congratulations! You now know the basics for how to implement puzzle editor functionality for a puzzle!
