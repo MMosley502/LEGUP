@@ -224,7 +224,7 @@ public abstract class Puzzle implements IBoardSubject, ITreeSubject {
     // Rest of implementation not shown
 }
 ```
-However, this may not always be sufficient. In your puzzle's class, you can override this method to include stricter checks. For example, in `ShortTruthTable.java`:
+However, this may not always be sufficient. In your puzzle's class, you can override this method to include stricter checks. An example from `ShortTruthTable.java` is shown below. Note that you will not be able to reuse this code, as the `validGrammar` method is Short Truth Table-specific. Look around at your puzzle's methods to see if a similar method has already been implemented.
 ```java
 public class ShortTruthTable extends Puzzle {
     /**
@@ -246,7 +246,6 @@ public class ShortTruthTable extends Puzzle {
 
     // Rest of implementation not shown
 ```
-Note that you will not be able to reuse this code, as the `validGrammar` method is Short Truth Table-specific. Look around at your puzzle's methods to see if a similar method has already been implemented.
 
 ### Accepting Text Input on the Create Puzzle Dialog
 First, you will need to modify the action performed by `gameBoxListener` when the puzzle is selected. Add your puzzle to the if statement checking to see if `puzzleName` equals your puzzle.
@@ -328,9 +327,7 @@ private ActionListener okButtonListener = new ActionListener() {
 ```
 
 ### Initializing an Empty Board
-The last thing that needs to be done is implementing `initializeBoard(String[] statementInput)` in the puzzle's importer class. This is puzzle-specific. An example with Short Truth Table is shown:
-
-Note that you will not be able to reuse this code, as the code is Short Truth Table-specific. If you are unsure where to begin, consider looking at the importer's `initializeBoard(Node node)` method for ideas.
+The last thing that needs to be done is implementing `initializeBoard(String[] statementInput)` in the puzzle's importer class. This is puzzle-specific. An example with Short Truth Table is shown below. Note that you will not be able to reuse this code, as the code is Short Truth Table-specific. If you are unsure where to begin, consider looking at the importer's `initializeBoard(Node node)` method for ideas.
 
 ```java
 class ShortTruthTableImporter extends PuzzleImporter {
