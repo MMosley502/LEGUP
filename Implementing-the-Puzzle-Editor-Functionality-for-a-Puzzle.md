@@ -213,6 +213,43 @@ public class ShortTruthTableImporter extends PuzzleImporter {
 }
 ```
 
+### Checking for Valid Statements
+`GameBoardFacade`'s `validateTextInput(String game, String[] statements)` method validates text input by calling a puzzle's `isValidTextInput(String[] statements)` method. By default in `Puzzle.java`, `isValidTextInput(String[] statements)` returns true if there are more than 0 statements:
+```java
+public abstract class Puzzle implements IBoardSubject, ITreeSubject {
+    public boolean isValidTextInput(String[] statements) {
+        return statements.length > 0;
+    }
+
+    // Rest of implementation not shown
+}
+```
+However, this may not always be sufficient. In your puzzle's class, you can override this method to include stricter checks. For example, in `ShortTruthTable.java`:
+```java
+public class ShortTruthTable extends Puzzle {
+    /**
+     * Determines if the given statements are valid for Short Truth Table
+     *
+     * @param statements
+     * @return true if the statements are valid for Short Truth Table, false otherwise
+     */
+    public boolean isValidTextInput(String[] statements) {
+        if (statements.length == 0)
+            return false;
+
+        ShortTruthTableImporter importer = (ShortTruthTableImporter) this.getImporter();
+        for (String s : statements)
+            if (!importer.validGrammar(s))
+                return false;
+        return true;
+    }
+
+    // Rest of implementation not shown
+```
+Note that you will not be able to reuse this code, as the `validGrammar` method is Short Truth Table-specific.
+
+
+
 ### Accepting Text Input on the Create Puzzle Dialog
 First, you will need to modify the action performed by `gameBoxListener` when the puzzle is selected. Add your puzzle to the if statement checking to see if `puzzleName` equals your puzzle.
 
@@ -291,6 +328,9 @@ private ActionListener okButtonListener = new ActionListener() {
         }
     };
 ```
+
+### Initializing an Empty Board
+
 
 TODO:
 -
