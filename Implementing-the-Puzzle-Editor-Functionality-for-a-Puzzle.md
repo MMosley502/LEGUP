@@ -247,6 +247,7 @@ public class ShortTruthTable extends Puzzle {
     }
 
     // Rest of implementation not shown
+}
 ```
 
 ### Accepting Text Input on the Create Puzzle Dialog
