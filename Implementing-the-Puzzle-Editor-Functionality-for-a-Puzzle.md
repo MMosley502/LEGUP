@@ -2,8 +2,9 @@
 1. [Temporarily disabling puzzle file creation](#temporarily-disabling-puzzle-file-creation)
 2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
 3. [Creating Tiles](#creating-tiles)
-4. [Initializing an Empty Puzzle From Row and Column Input](#initializing-an-empty-puzzle-from-row-and-column-input)
-5. [Initializing an Empty Puzzle From Text Input](#initializing-an-empty-puzzle-from-text-input)
+4a. [Initializing an Empty Puzzle From Row and Column Input](#initializing-an-empty-puzzle-from-row-and-column-input)
+4b. [Initializing an Empty Puzzle From Text Input](#initializing-an-empty-puzzle-from-text-input)
+5. [Implementing Cell Modification Functionality](#implementing-cell-modification-functionality)
 
 ## Temporarily Disabling Puzzle File Creation
 We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within LEGUP from accidentally accessing this in-progress functionality.
@@ -371,6 +372,8 @@ class ShortTruthTableImporter extends PuzzleImporter {
     }
 }
 ```
+
+## Implementing Cell Modification Functionality
 
 TODO:
 -
