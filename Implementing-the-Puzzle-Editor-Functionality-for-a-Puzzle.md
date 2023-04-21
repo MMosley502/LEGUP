@@ -126,6 +126,9 @@ For this step, all sample code excerpts will use Nurikabe.
 First, verify that the puzzle's importer class has `acceptsRowsAndColumnsInput()` return true and `acceptsTextInput()` return false. Change these methods to return the corresponding values if they do not already.
 
 Next, verify that the puzzle's importer class throws an `UnsupportedOperationException` for `initializeBoard(String[] statements)`. To keep all error messages consistent, please have the `UnsupportedOperationException`'s error message read "<PUZZLE_NAME> cannot accept text input".
+
+Finally, we implement `initializeBoard(int rows, int columns)` in the puzzle's importer class to create an empty puzzle board. This can be done by creating a new board object and then adding cells to it in a double for loop.
+
 ```java
 public class NurikabeImporter extends PuzzleImporter {
     public NurikabeImporter(Nurikabe nurikabe) {
@@ -142,15 +145,31 @@ public class NurikabeImporter extends PuzzleImporter {
         return false;
     }
 
+    /**
+     * Creates an empty board for building
+     *
+     * @param rows    the number of rows on the board
+     * @param columns the number of columns on the board
+     * @throws RuntimeException
+     */
     @Override
-    public void initializeBoard(String[] statements) throws InputMismatchException {
-        throw new InputMismatchException("Nurikabe cannot accept text input");
+    public void initializeBoard(int rows, int columns) {
+        NurikabeBoard nurikabeBoard = new NurikabeBoard(columns, rows);
+
+        for (int y = 0; y < rows; y++) {
+            for (int x = 0; x < columns; x++) {
+                NurikabeCell cell = new NurikabeCell(NurikabeType.UNKNOWN.toValue(), new Point(x, y));
+                cell.setIndex(y * columns + x);
+                cell.setModifiable(true);
+                nurikabeBoard.setCell(x, y, cell);
+            }
+        }
+        puzzle.setCurrentBoard(nurikabeBoard);
     }
-    
+
     // Rest of implementation not shown
 }
 ```
-
 ## Initializing an Empty Puzzle From Text Input
 ***For most puzzles, you will never need to and should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Most puzzles will only need to be initialized with a row and column input. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
 
