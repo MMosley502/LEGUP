@@ -145,6 +145,11 @@ public class NurikabeImporter extends PuzzleImporter {
         return false;
     }
 
+    @Override
+    public void initializeBoard(String[] statements) throws UnsupportedOperationException {
+        throw new UnsupportedOperationException("Nurikabe cannot accept text input");
+    }
+
     /**
      * Creates an empty board for building
      *
@@ -170,10 +175,43 @@ public class NurikabeImporter extends PuzzleImporter {
     // Rest of implementation not shown
 }
 ```
+
 ## Initializing an Empty Puzzle From Text Input
 ***For most puzzles, you will never need to and should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
 
 General note regarding text input: all input will be broken up by new lines. If you want a different way to break up the text input, further modification to the code will be necessary. These modifications will not be covered in this tutorial.
+
+For this step, all sample code excerpts will use Short Truth Table.
+
+### Setting Proper Defaults
+First, verify that the puzzle's importer class has `acceptsRowsAndColumnsInput()` return false and `acceptsTextInput()` return true. Change these methods to return the corresponding values if they do not already.
+
+Next, verify that the puzzle's importer class throws an `UnsupportedOperationException` for `initializeBoard(int rows, int columns)`. To keep all error messages consistent, please have the `UnsupportedOperationException`'s error message read "<PUZZLE_NAME> cannot accept row and column input".
+
+```java
+public class ShortTruthTableImporter extends PuzzleImporter {
+    public ShortTruthTableImporter(ShortTruthTable stt) {
+        super(stt);
+    }
+
+    @Override
+    public boolean acceptsRowsAndColumnsInput() {
+        return false;
+    }
+
+    @Override
+    public boolean acceptsTextInput() {
+        return true;
+    }
+
+    @Override
+    public void initializeBoard(int rows, int columns) {
+        throw new UnsupportedOperationException("Short Truth Table cannot accept row and column input");
+    }
+
+    // Rest of implementation not shown
+}
+```
 
 ### Accepting Text Input on the Create Puzzle Dialog
 First, you will need to modify the action performed by `gameBoxListener` when the puzzle is selected. Add your puzzle to the if statement checking to see if `puzzleName` equals your puzzle.
