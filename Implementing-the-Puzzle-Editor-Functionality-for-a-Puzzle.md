@@ -6,7 +6,7 @@
     * [From row and column input](#initializing-an-empty-puzzle-from-row-and-column-input)
     * [From text input](#initializing-an-empty-puzzle-from-text-input)
 5. [Implementing cell modification functionality](#implementing-cell-modification-functionality)
-6. [Implementing the ability to save files](#implementing-the-ability-to-save-and-open-files)
+6. [Implementing the ability to save files](#implementing-the-ability-to-save-files)
 
 ## Enabling Puzzle File Creation
 Navigate to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`. For example, if we want to enable file creation for Nurikabe, and the configurations file looked like this...
