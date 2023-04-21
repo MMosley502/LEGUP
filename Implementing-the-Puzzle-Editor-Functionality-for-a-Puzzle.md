@@ -7,35 +7,8 @@
     * [From Text Input](#initializing-an-empty-puzzle-from-text-input)
 5. [Implementing Cell Modification Functionality](#implementing-cell-modification-functionality)
 
-## Temporarily Disabling Puzzle File Creation
-We will disable puzzle file creation for your new puzzle temporarily. This will allow us to work on the puzzle file creation functionality while preventing users within LEGUP from accidentally accessing this in-progress functionality.
-
-Navigate to `bin/main/edu/rpi/legup/legup/config` and add the following under the last puzzle:
-
-```xml
-<puzzle name="Nurikabe"
-            qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
-            fileType=".xml"
-            fileCreationDisabled="false"/>
-```
-So, for example, if `config` looked like this previously...
-
-```xml
-<Legup version="3.0">
-    <puzzles>
-        <puzzle name="Battleship"
-            qualifiedClassName="edu.rpi.legup.puzzle.battleship.Battleship"
-            fileType=".xml"
-            fileCreationDisabled="true"/>
-        <puzzle name="TreeTent"
-            qualifiedClassName="edu.rpi.legup.puzzle.treetent.TreeTent"
-            fileType=".xml"
-            fileCreationDisabled="true"/>
-    </puzzles>
-</Legup>
-```
-...it should now look like this:
-
+## Enabling Puzzle File Creation
+Navigate to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`. For example, if we want to enable file creation for Nurikabe, and the configurations file looked like this...
 ```xml
 <Legup version="3.0">
     <puzzles>
@@ -51,6 +24,25 @@ So, for example, if `config` looked like this previously...
             qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
             fileType=".xml"
             fileCreationDisabled="true"/>
+    </puzzles>
+</Legup>
+```
+...then it should be changed to this:
+```xml
+<Legup version="3.0">
+    <puzzles>
+        <puzzle name="Battleship"
+            qualifiedClassName="edu.rpi.legup.puzzle.battleship.Battleship"
+            fileType=".xml"
+            fileCreationDisabled="true"/>
+        <puzzle name="TreeTent"
+            qualifiedClassName="edu.rpi.legup.puzzle.treetent.TreeTent"
+            fileType=".xml"
+            fileCreationDisabled="false"/>
+        <puzzle name="Nurikabe"
+            qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
+            fileType=".xml"
+            fileCreationDisabled="false"/>
     </puzzles>
 </Legup>
 ```
@@ -423,47 +415,6 @@ public class NurikabeCell extends GridCell<Integer> {
 
     // Rest of implementation not shown
 }
-```
-
-TODO:
--
-If the puzzle only accepts row and column input:
-- In the puzzle importer's class (e.g. `NurikabeImporter.java`):
-    - Make sure that `initializeBoard(String[] statements)` immediately throws an UnsupportedOperationException
-    - Implement `initializeBoard(int rows, int columns)` to create an empty puzzle board (add NurikabeImporter example)
-    - Make sure `acceptsRowsAndColumnsInput()` returns true and `acceptsTextInput()` returns false
-
-If the puzzle only accepts text input:
-- In the puzzle importer's class (e.g. `ShortTruthTable.java`)
-    - Make sure that `initializeBoard(int rows, int columns)` immediately throws an UnsupportedOperationException
-    - Implement `initializeBoard(String[] statementInput)` however is fit for the puzzle
-    - Make sure `acceptsTextInput()` returns true and `acceptsRowsAndColumnsInput()` returns false
-    - Implement `isValidTextInput(String[] statements)` in the puzzle class (e.g. `ShortTruthTable.java`) if the default behavior in `Puzzle.java` is not sufficient
-
-- Create a new method `setType()` in the puzzle class (e.g. `Nurikabe.java`, `ShortTruthTable.java`) that deals with how to handle these element IDs
-
-- There may also be other incompatibilities that should be easy to track down through errors that tell you something is null. This is usually caused by the puzzle editor not creating all the proof editor stuff (like the proof tree) from the proof solver.
-
-## Enabling Puzzle File Creation
-Now, you are ready to enable the puzzle file creation! Navigate back to `bin/main/edu/rpi/legup/legup/config` and change the corresponding `fileCreationDisabled` parameter to `false`.
-
-```xml
-<Legup version="3.0">
-    <puzzles>
-        <puzzle name="Battleship"
-            qualifiedClassName="edu.rpi.legup.puzzle.battleship.Battleship"
-            fileType=".xml"
-            fileCreationDisabled="true"/>
-        <puzzle name="TreeTent"
-            qualifiedClassName="edu.rpi.legup.puzzle.treetent.TreeTent"
-            fileType=".xml"
-            fileCreationDisabled="false"/>
-        <puzzle name="Nurikabe"
-            qualifiedClassName="edu.rpi.legup.puzzle.nurikabe.Nurikabe"
-            fileType=".xml"
-            fileCreationDisabled="false"/>
-    </puzzles>
-</Legup>
 ```
 
 # End of Tutorial
