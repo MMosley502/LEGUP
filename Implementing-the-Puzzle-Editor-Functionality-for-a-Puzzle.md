@@ -254,18 +254,18 @@ First, you will need to modify the action performed by `gameBoxListener` when th
 
 ```java
 private ActionListener gameBoxListener = new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            JComboBox comboBox = (JComboBox) e.getSource();
-            String puzzleName = (String) comboBox.getSelectedItem();
-            if (puzzleName.equals("ShortTruthTable")) {
-                // Show text input area (implementation not shown)
-            }
-            else {
-                // Show row and column input area (implementation not shown)
-            }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        JComboBox comboBox = (JComboBox) e.getSource();
+        String puzzleName = (String) comboBox.getSelectedItem();
+        if (puzzleName.equals("ShortTruthTable")) {
+            // Show text input area (implementation not shown)
         }
-    };
+        else {
+            // Show row and column input area (implementation not shown)
+        }
+    }
+};
 ```
 Note this also will need to be changed in the `CreatePuzzleDialog` constructor. This makes sure that the dialog shows the correct input when it is initially opened.
 ```java
