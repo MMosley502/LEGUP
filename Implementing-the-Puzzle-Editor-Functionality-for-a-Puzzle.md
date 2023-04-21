@@ -1,5 +1,5 @@
 # Enable Puzzle File Creation for your New Puzzle (WIP page and functionality)
-1. [Temporarily disabling puzzle file creation](#temporarily-disabling-puzzle-file-creation)
+1. [Enabling Puzzle File Creation](#enable-puzzle-file-creation)
 2. [Specifying valid board dimensions](#specifying-valid-board-dimensions)
 3. [Creating Tiles](#creating-tiles)
 4. Initializing an Empty Puzzle (CHOOSE ONE)
