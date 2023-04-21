@@ -375,6 +375,7 @@ class ShortTruthTableImporter extends PuzzleImporter {
 ```
 
 ## Implementing Cell Modification Functionality
+In the puzzle's cell class, you will need to implement `setType(Element e, MouseEvent m)`.
 
 TODO:
 -
