@@ -171,7 +171,50 @@ public class NurikabeImporter extends PuzzleImporter {
 }
 ```
 ## Initializing an Empty Puzzle From Text Input
-***For most puzzles, you will never need to and should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Most puzzles will only need to be initialized with a row and column input. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
+***For most puzzles, you will never need to and should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
+
+### Accepting Text Input on the Create Puzzle Dialog
+First, you will need to modify the action performed by `gameBoxListener` when the puzzle is selected. Add your puzzle to the if statement checking to see if `puzzleName` equals your puzzle.
+
+```java
+private ActionListener gameBoxListener = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JComboBox comboBox = (JComboBox) e.getSource();
+            String puzzleName = (String) comboBox.getSelectedItem();
+            if (puzzleName.equals("ShortTruthTable")) {
+                // Show text input area (implementation not shown)
+            }
+            else {
+                // Show row and column input area (implementation not shown)
+            }
+        }
+    };
+```
+Note this also will need to be changed in the `CreatePuzzleDialog` constructor. This makes sure that the dialog shows the correct input when it is initially opened.
+```java
+public class CreatePuzzleDialog extends JDialog {
+
+    // Implementation not shown
+
+    public CreatePuzzleDialog(JFrame parent, HomePanel homePanel) {
+        super(parent, true);
+
+        // Rest of implementation not shown
+
+        if (Objects.equals(this.gameBox.getSelectedItem(), "ShortTruthTable")) {
+            // Show text input area (implementation not shown)
+        }
+        else {
+            // Show row and column input area (implementation not shown)
+        }
+
+        // Rest of implementation not shown
+    }
+
+    // Rest of implementation not shown
+}
+```
 
 TODO:
 -
