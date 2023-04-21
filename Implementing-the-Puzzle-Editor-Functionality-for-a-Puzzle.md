@@ -246,9 +246,7 @@ public class ShortTruthTable extends Puzzle {
 
     // Rest of implementation not shown
 ```
-Note that you will not be able to reuse this code, as the `validGrammar` method is Short Truth Table-specific.
-
-
+Note that you will not be able to reuse this code, as the `validGrammar` method is Short Truth Table-specific. Look around at your puzzle's methods to see if a similar method has already been implemented.
 
 ### Accepting Text Input on the Create Puzzle Dialog
 First, you will need to modify the action performed by `gameBoxListener` when the puzzle is selected. Add your puzzle to the if statement checking to see if `puzzleName` equals your puzzle.
@@ -330,7 +328,52 @@ private ActionListener okButtonListener = new ActionListener() {
 ```
 
 ### Initializing an Empty Board
+The last thing that needs to be done is implementing `initializeBoard(String[] statementInput)` in the puzzle's importer class. This is puzzle-specific. An example with Short Truth Table is shown:
 
+Note that you will not be able to reuse this code, as the code is Short Truth Table-specific. If you are unsure where to begin, consider looking at the importer's `initializeBoard(Node node)` method for ideas.
+
+```java
+class ShortTruthTableImporter extends PuzzleImporter {
+
+    public ShortTruthTableImporter(ShortTruthTable stt) {
+        super(stt);
+    }
+
+    // Rest of implementation not shown
+
+    /**
+     * Creates the board for building using statements
+     *
+     * @param statementInput
+     * @throws UnsupportedOperationException
+     * @throws IllegalArgumentException
+     */
+    public void initializeBoard(String[] statementInput) throws UnsupportedOperationException, IllegalArgumentException {
+        List<String> statementsList = new LinkedList<>();
+        for (String s : statementInput) {
+            if (s.strip().length() > 0) {
+                statementsList.add(s);
+            }
+        }
+        String[] statementData = statementsList.toArray(new String[statementsList.size()]);
+
+        if (statementData.length == 0) {
+            throw new IllegalArgumentException("short truth table Importer: no statements found for board");
+        }
+
+        // Store all cells and statements
+        List<List<ShortTruthTableCell>> allCells = new ArrayList<>();
+        List<ShortTruthTableStatement> statements = new ArrayList<>();
+
+        // Parse the data
+        int maxStatementLength = parseAllStatementsAndCells(statementData, allCells, statements);
+
+        // Generate and set the board - don't set given cell values since none are given
+        ShortTruthTableBoard sttBoard = generateBoard(allCells, statements, maxStatementLength);
+        puzzle.setCurrentBoard(sttBoard);
+    }
+}
+```
 
 TODO:
 -
