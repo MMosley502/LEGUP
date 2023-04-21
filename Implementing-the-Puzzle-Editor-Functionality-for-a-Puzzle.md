@@ -173,6 +173,8 @@ public class NurikabeImporter extends PuzzleImporter {
 ## Initializing an Empty Puzzle From Text Input
 ***For most puzzles, you will never need to and should not implement this functionality.*** This functionality was created as a result of needing a more intuitive way for users to create Short Truth Table puzzle files. Short Truth Table puzzles are special, as it is not intuitive for the user to create a puzzle file by entering row and column values. Current implementation only allows puzzles to support either row and column input or text input. If you determine that your puzzle would work better with text input rather than row and column input, then continue on with this section. Otherwise, skip to the next section.
 
+General note regarding text input: all input will be broken up by new lines. If you want a different way to break up the text input, further modification to the code will be necessary. These modifications will not be covered in this tutorial.
+
 ### Accepting Text Input on the Create Puzzle Dialog
 First, you will need to modify the action performed by `gameBoxListener` when the puzzle is selected. Add your puzzle to the if statement checking to see if `puzzleName` equals your puzzle.
 
@@ -214,6 +216,42 @@ public class CreatePuzzleDialog extends JDialog {
 
     // Rest of implementation not shown
 }
+```
+Finally, modify the `okButtonListener` so that it checks if the field is unfilled if the current selected puzzle is the puzzle accepting text dialog. Also modify the action event so that `homePanel` opens the puzzle with the text input.
+``` java
+private ActionListener okButtonListener = new ActionListener() {
+        /**
+         * Attempts to open the puzzle editor interface for the given game with the given dimensions
+         * @param ae the event to be processed
+         */
+        @Override
+        public void actionPerformed(ActionEvent ae) {
+            String game = Config.convertDisplayNameToClassName((String) gameBox.getSelectedItem());
+
+            // Check if all 3 TextFields are filled
+            if (game.equals("ShortTruthTable") && textArea.getText().equals("")) {
+                System.out.println("Unfilled fields");
+                return;
+            }
+            if (!game.equals("ShortTruthTable") && (game.equals("") || rows.getText().equals("") || columns.getText().equals(""))) {
+                // Game does not accept text input (implementation is not shown)
+            }
+
+            try {
+                if (game.equals("ShortTruthTable")) {
+                    homePanel.openEditorWithNewPuzzle("ShortTruthTable", textArea.getText().split("\n"));
+                }
+                else {
+                    // Open edit with row and column input (implementation not shown)
+                }
+                setVisible(false);
+            }
+            catch (IllegalArgumentException e) {
+                System.out.println("Failed to open editor with new puzzle");
+                e.printStackTrace(System.out);
+            }
+        }
+    };
 ```
 
 TODO:
