@@ -376,7 +376,54 @@ class ShortTruthTableImporter extends PuzzleImporter {
 ```
 
 ## Implementing Cell Modification Functionality
-In the puzzle's cell class, you will need to implement `setType(Element e, MouseEvent m)`.
+In the puzzle's cell class, you will need to implement `setType(Element e, MouseEvent m)`. You should use `getElementByID()` when you are referencing an element.
+```java
+public class NurikabeCell extends GridCell<Integer> {
+/**
+     * Sets the type of this NurikabeCell
+     *
+     * @param e element to set the type of this nurikabe cell to
+     */
+    @Override
+    public void setType(Element e, MouseEvent m) {
+        if (e.getElementName().equals("Black Tile")) {
+            this.data = -1;
+        }
+        else {
+            if (e.getElementName().equals("White Tile")) {
+                this.data = 0;
+            }
+            else {
+                if (e.getElementName().equals("Number Tile")) {
+                    if (m.getButton() == MouseEvent.BUTTON1) {
+                        if (this.data <= 0 || this.data > 8) {
+                            this.data = 1;
+                        }
+                        else {
+                            this.data = this.data + 1;
+                        }
+                    }
+                    else {
+                        if (m.getButton() == MouseEvent.BUTTON3) {
+                            if (this.data > 1) {
+                                this.data = this.data - 1;
+                            }
+                            else {
+                                this.data = 9;
+                            }
+                        }
+                    }
+                }
+                else { // unknown tile
+                    this.data = -2;
+                }
+            }
+        }
+    }
+
+    // Rest of implementation not shown
+}
+```
 
 TODO:
 -
