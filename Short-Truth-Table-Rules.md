@@ -22,7 +22,7 @@ In order to complete a proof in this Puzzle, you will change the undetermined tr
 * Clicking on a green block will color it red (False).
 * Clicking on a red block will color it gray (Undetermined).
 
-For each change in truth value, you will back up your reasoning with one of LEGUP's defined rules, as defined below. At every stage of your solution, LEGUP will keep a visual representation of the proof in the Proof Tree window, with circles representing the stages of the proof. The proof moves along from left to right, with Case Rules causing splits in the tree represented by diverging arrows toward new levels of circles, and with green arrows representing changes that have been supported by a Rule. In order to support a change, you can ensure that you have the correct stage in the Proof Tree selected (the block in question will be bordered in green), and then select the Rule in the Rules window that corresponds to the change you made at that stage.
+For each change in truth value, you will back up your reasoning with one of LEGUP's defined rules, as defined below. At every stage of your solution, LEGUP will keep a visual representation of the proof in the Proof Tree window, with circles representing the stages of the proof. The proof moves along from left to right, with Case Rules causing splits in the tree represented by diverging arrows toward new levels of circles, and with green arrows representing changes that have been supported by a Rule. In order to support a change, you can ensure that you have the correct stage in the Proof Tree selected (the block in question will be bordered in green), and then select the Rule in the Rules window that corresponds to the change you made at that stage. Alternatively, you can select a Rule and then a corresponding block in the statements to automatically create a new node or nodes with that Rule as its foundation.
 
 If you reach a Contradiction in your proof, you can close a Tree branch by selecting the correct Contradiction Rule from the Rules window. Once all branches are closed, or all possible truth values for all blocks have been explored, you can select the Check or Check All buttons to have LEGUP check that your solution and reasoning are correct.
 
@@ -34,31 +34,31 @@ If you reach a Contradiction in your proof, you can close a Tree branch by selec
 
 [![Hn3w9qb.jpg](https://iili.io/Hn3w9qb.jpg)](https://freeimage.host/)
 
-Use this case on a unknown variable to create a split in the branch where the variable is true in one branch, and false in another
+Use this case on a variable of Undetermined truth value to create a split in the current branch of the Tree where the variable is True in one branch, and False in another.
 
 ### Biconditional Case
 
 [![Hn3wqI1.jpg](https://iili.io/Hn3wqI1.jpg)](https://freeimage.host/)
 
-Use this case on a known 'Biconditional' to create a split in the branch where the surronding expressions will satisfy the condition
+Use this case on a Biconditional operator of known truth value to create a split in the current branch of the Tree where the surrounding expressions will satisfy the condition in different ways in the two new branches.
 
 ### Conditional Case
 
 [![Hn3w7It.jpg](https://iili.io/Hn3w7It.jpg)](https://freeimage.host/)
 
-Use this case on a known 'Conditional' to create a split in the branch where the surronding expressions will satisfy the condition
+Use this case on a Conditional operator of known truth value to create a split in the current branch of the Tree where the surrounding expressions will satisfy the condition in different ways in the two new branches.
 
 ### Conjunction Case
 
 [![Hn3jig4.jpg](https://iili.io/Hn3jig4.jpg)](https://freeimage.host/)
 
-Use this case on a known 'And' to create a split in the branch where the surronding expressions will satisfy the condition
+Use this case on a an AND operator that is known to be False to create a split in the current branch of the Tree where the surrounding expressions will satisfy the condition in different ways in the two new branches.
 
 ### Disjunction Case
 
 [![Hn3wVv2.jpg](https://iili.io/Hn3wVv2.jpg)](https://freeimage.host/)
 
-Use this case on a known 'Or' to create a split in the branch where the surronding expressions will satisfy the condition
+Use this case on an OR operator that is known to be True to create a split in the current branch of the Tree where the surrounding expressions will satisfy the condition in different ways in the two new branches.
 
 
 ## Contradiction Rules
