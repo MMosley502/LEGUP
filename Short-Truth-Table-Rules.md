@@ -117,67 +117,90 @@ Use this rule to end a line of reasoning if the value a variable in two location
 
 [![Hn3hHZu.jpg](https://iili.io/Hn3hHZu.jpg)](https://freeimage.host/)
 
-The same variable must hold it's truth value in all cases, Use this rule to assign all of a given variable the same value
+The same variable must hold its truth value in all cases. Use this rule to assign all instances of a given variable the same value.
 
 ### Biconditional Elimination 
 
 [![Hn3h5ap.jpg](https://iili.io/Hn3h5ap.jpg)](https://freeimage.host/)
 
-Use this rule to assign an expression a truth value depending on the 'Biconditional'  State
+Use this rule to assign an expression in a Biconditional statement a truth value depending on the known truth value of the Biconditional operator. Specifically:
+* If the Biconditional is True, the statements on either side must have the same truth value
+* If the Biconditional is False, the statements on either side must have different truth values
 
 ### Conditional Elimination 
 
 [![Hn3h5ap.jpg](https://iili.io/Hn3h5ap.jpg)](https://freeimage.host/)
 
-Use this rule to assign an expression a truth value depending on the 'Conditional' State
+Use this rule to assign a truth value to an expression in a Conditional statement depending on the truth value of the Conditional operator. Specifically:
+* If the Conditional is True and the right side is False, the left side must be False
+* If the Conditional is True and the left side is True, the right side must be True
+* If the Conditional is False then the left side must be True and the right side must be False
 
 ### Conjunction Elimination
 
 [![Hn3hnu1.jpg](https://iili.io/Hn3hnu1.jpg)](https://freeimage.host/)
 
-Use this rule to assign an expression a truth value depending on the 'And' State
+Use this rule to assign a truth value to an expression in an AND statement depending on the truth value of the AND operator. Specifically:
+* If the AND is True, both sides must be True
+* If the AND is False and the right side is True, the left side must be False, and vice versa
+* If the AND is False and the left side is True, the right side must be False, and vice versa
 
 ### Disjunction Elimination 
 
 [![Hn3hSPj.jpg](https://iili.io/Hn3hSPj.jpg)](https://freeimage.host/)
 
-Use this rule to color an expression green or red depending on the 'conditional' State
+Use this rule to assign a truth value to an expression in an OR statement depending on the truth value of the OR operator. Specifically:
+* If the OR is True and the right side is False, the left side must be True, and vice versa
+* If the OR is True and the left side is False, the right side must be True, and vice versa
 
 ### Negation Elimination 
 
 [![Hn3h8Mb.jpg](https://iili.io/Hn3h8Mb.jpg)](https://freeimage.host/)
 
-Use this rule to assign an expression a truth value depending on the 'Not' State
+Use this rule to assign a truth value to an expression in a NOT statement depending on the truth value of the NOT operator. Specifically:
+* If the NOT is True, the negated expression must be False
+* If the NOT is False, the negated expression must be True
 
 ### Biconditional Introduction
 
 [![Hn3hLDF.jpg](https://iili.io/Hn3hLDF.jpg)](https://freeimage.host/)
 
-Use this rule to Assign the 'Bicontional' a truth value on the the surronding expressions
+Use this rule to assign a truth value to a Biconditional operator depending on the truth value of the surrounding expressions. Specifically:
+* If both expressions are either True or False, the Biconditional is True
+* If the expressions have different truth values, the Biconditional is False
 
 ### Conditional Introduction 
 
 [![Hn3hLDF.jpg](https://iili.io/Hn3hLDF.jpg)](https://freeimage.host/)
 
-Use this rule to Assign the 'Condtional' a truth value on the the surronding expressions
+Use this rule to assign a truth value to a Conditional operator depending on the truth value of the surrounding expressions. Specifically:
+* If the left side is False, the Conditional is True
+* If the right side is True, the Conditional is False
+* If the left side is True and the right side is False, the Conditional is False
 
 ### Conjunction Introduction
 
 [![Hn3hiAP.jpg](https://iili.io/Hn3hiAP.jpg)](https://freeimage.host/)
 
-Use this rule to Assign the 'And' a truth value on the the surronding expressions
+Use this rule to assign a truth value to an AND operator depending on the truth value of the surrounding expressions. Specifically:
+* If both expressions are True, the AND is True
+* If either expression is False, the AND is False
 
 ### Disjunction Introduction 
 
 [![Hn3jFxn.jpg](https://iili.io/Hn3jFxn.jpg)](https://freeimage.host/)
 
-Use this rule to Assign the 'Or' a truth value on the the surronding expressions
+Use this rule to assign a truth value to an OR operator depending on the truth value of the surrounding expressions. Specifically:
+* If either expression is True, the OR is True
+* If both expressions are False, the OR is False
 
 ### Negation Introduction 
 
 [![Hn3jFxn.jpg](https://iili.io/Hn3jFxn.jpg)](https://freeimage.host/)
 
-Use this rule to Assign the 'Not' a truth value on the the surronding expressions
+Use this rule to assign a truth value to a NOT operator depending on the truth value of the negated expression. Specifically:
+* If the negated expression is False, the NOT is True
+* If the negated expression is True, the NOT is False
 
 
 # Truth Tables
