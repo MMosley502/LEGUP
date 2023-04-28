@@ -67,37 +67,48 @@ Use this case on an OR operator that is known to be True to create a split in th
 
 [![Hn3ja0x.jpg](https://iili.io/Hn3ja0x.jpg)](https://freeimage.host/)
 
-Use this rule to end a line of reasoning if the value of the 'Bicondtional' is incorrect based on the surronding expressions
+Use this rule to end a line of reasoning if the value of the Biconditional operator is incorrect based on the surrounding expressions. Specifically:
+* If both sides of the Biconditional statement are True or False, the Biconditional cannot be False
+* If one side of the Biconditional statement is False while the other is True, the Biconditional itself cannot be True
 
 ### Conditional Contradiction
 
 [![Hn3jEOP.jpg](https://iili.io/Hn3jEOP.jpg)](https://freeimage.host/)
 
-Use this rule to end a line of reasoning if the value of the 'Condtional' is incorrect based on the surronding expressions
+Use this rule to end a line of reasoning if the value of the Conditional operator is incorrect based on the surrounding expressions. Specifically: 
+* If the right side of the Conditional statement is True, the Conditional cannot be False
+* If the left side of the Conditional statement is False, the Conditional cannot be False
+* If the right side of the Conditional statement is False while the left side is True, the Conditional itself cannot be True
 
 ### Conjunction Contradiction
 
 [![Hn3jTb9.jpg](https://iili.io/Hn3jTb9.jpg)](https://freeimage.host/)
 
-Use this rule to end a line of reasoning if the value of the 'And' is incorrect based on the surronding expressions
+Use this rule to end a line of reasoning if the value of the AND operator is incorrect based on the surrounding expressions. Specifically:
+* If both sides of the AND statement are True, the AND itself cannot be False
+* If either side of the AND statement is False, the AND itself cannot be True
 
 ### Disjunction Contradiction
 
 [![Hn3jveI.jpg](https://iili.io/Hn3jveI.jpg)](https://freeimage.host/)
 
-Use this rule to end a line of reasoning if the value of the 'Or' is incorrect based on the surronding expressions
+Use this rule to end a line of reasoning if the value of the OR operator is incorrect based on the surrounding expressions. Specifically:
+* If either side of the OR statement is True, the OR itself cannot be False
+* If both sides of the OR statement are False, the OR itself cannot be True
 
 ### Negation Contradiction
 
 [![Hn3jw0v.jpg](https://iili.io/Hn3jw0v.jpg)](https://freeimage.host/)
 
-Use this rule to end a line of reasoning if the value of the 'Not' is incorrect based on the surronding expression
+Use this rule to end a line of reasoning if the value of the NOT operator is incorrect based on the surrounding expression. Specifically:
+* If the negated variable is False, the NOT cannot be False
+* If the negated variable is True, the NOT cannot be True
 
 ### Variable Contradiction
 
 [![Hn3ja0x.jpg](https://iili.io/Hn3ja0x.jpg)](https://freeimage.host/)
 
-Use this rule to end a line of reasoning if the value a variable in two locations has two different states
+Use this rule to end a line of reasoning if the value a variable in two locations has two different truth values.
 
 
 ## Basic rules
