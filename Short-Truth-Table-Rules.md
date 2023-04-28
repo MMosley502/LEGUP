@@ -1,14 +1,26 @@
-# Short Truth table
-Short Truth table is a visual representation of logic expressions that you need to assign values for
+# Short Truth Table
+Short Truth Table is a visual representation of logic expressions for which you need to assign values in the Short Truth Table Method.
 
-Red means the block represents "false", and green means the block represents "True"
+## Short Truth Table Method
 
-Clicking on a gray block will color it green.
+The Short Truth Table Method assigns truth values to the involved atomic and complex statements in order to obtain a desired combination of truth values. The Short Truth Table Method thus tries to generate one row of the truth table that has the combination of truth values in which you are interested. The Truth Table Method systematically exhausts all possible truth value combinations of the involved statements. In the truth table, we look for a row that reflects a certain possibility, and that will tell us the answer to whatever question we had. The Short Truth Table Method shortens this process by focusing the search.
 
-Clicking on a green block will color it red.
+As you assign truth values to certain statements, the truth values of other statements can be forced. For example, if you are forced to make a statement both true and false, then you know that the combination of truth values you are looking for does not exist (this is called Contradiction, and you can see its rules in later sections, as well as other rules that will help you solve given exercises). The Short Truth Table Method is therefore often a kind of proof by contradiction or indirect proof. 
 
-Clicking on a red block will color it gray.
+There are different final evaluations of logical arguments (collections of premises and conclusions) that you can reach as a result of the Short Truth Table Method:
+* Valid Argument: It is not possible to have true premises and a false conclusion. To prove this, you can suppose the premises of an argument are true and the conclusion is false, and derive a contradiction.
+* Invalid Argument: It is possible to have true premises and a false conclusion. To prove this, you can suppose the premises of an argument are true and the conclusion is false, and that all statements can be evaluated in that case with no contradictions.
+* Tautology: It is not possible for the statement in question to be false. To prove this, you can suppose the statement in question is false and derive a contradiction.
+* Contradiction: It is not possible for the statement to be true. To prove this, you can suppose the statement in question is true and derive a contradiction (which, in this sense, means that if the statement is true then some other statement or variable is assigned both true and false according to the Contradiction Rules later on).
 
+## Puzzle Instructions
+
+In LEGUP Short Truth Table, rather than annotating statements with truth values, we’ll turn the statements green (True) or red (False). The truth value of a statement is indicated by the truth value of its outermost operator. The truth values of operators and variables are linked to one another according to the rules in the following sections.
+
+In order to complete a proof in this Puzzle, you will change the undetermined truth values of each block in each statement in a systematic way, supporting each change with a logical rule from the list below. The truth values of the blocks can be changed in the following ways:
+* Clicking on a gray block will color it green (True).
+* Clicking on a green block will color it red (False).
+* Clicking on a red block will color it gray (Undetermined).
 
 # LEGUP Proof rules
 
