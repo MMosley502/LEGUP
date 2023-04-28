@@ -10,55 +10,6 @@ Clicking on a green block will color it red.
 Clicking on a red block will color it gray.
 
 
-
-# Rules
-### Here are the basic rules of the puzzle
-
-'And' Expression Truth Table
-
-| Left Expression     | Right Expression    | Truth State   |
-| :----:            |    :----:         |     :----:    |
-|       T           |       T           |       T       |
-|       T           |       F           |       F       |
-|       F           |       T           |       F       |
-|       F           |       F           |       F       |
-
-'Conditional' Expression Truth Table
-
-| Left Expression     | Right Expression    | Truth State   |
-| :----:            |    :----:         |     :----:    |
-|       T           |       T           |       T       |
-|       T           |       F           |       F       |
-|       F           |       T           |       T       |
-|       F           |       F           |       T       |
-
-'Biconditional' Expression Truth Table
-
-| Left Expression     | Right Expression    | Truth State   |
-| :----:            |    :----:         |     :----:    |
-|       T           |       T           |       T       |
-|       T           |       F           |       F       |
-|       F           |       T           |       F       |
-|       F           |       F           |       T       |
-
-'Or' Expression Truth Table
-
-| Left Expression     | Right Expression    | Truth State   |
-| :----:            |    :----:         |     :----:    |
-|       T           |       T           |       T       |
-|       T           |       F           |       T       |
-|       F           |       T           |       T       |
-|       F           |       F           |       F       |
-
-'Not' Expression Truth Table
-
-|  Expression       | Truth State   |
-| :----:            |    :----:     | 
-|       T           |       F       |   
-|       F           |       T       |   
-
-
-
 # LEGUP Proof rules
 ## Basic rules
 
@@ -203,3 +154,51 @@ Use this case on a known 'Conditional' to create a split in the branch where the
 [![Hn3wVv2.jpg](https://iili.io/Hn3wVv2.jpg)](https://freeimage.host/)
 
 Use this case on a known 'Or' to create a split in the branch where the surronding expressions will satisfy the condition
+
+
+# Truth Table Rules
+### Here are the basic rules of the puzzle
+
+'And' Expression Truth Table
+
+| Left Expression     | Right Expression    | Truth State   |
+| :----:            |    :----:         |     :----:    |
+|       T           |       T           |       T       |
+|       T           |       F           |       F       |
+|       F           |       T           |       F       |
+|       F           |       F           |       F       |
+
+'Conditional' Expression Truth Table
+
+| Left Expression     | Right Expression    | Truth State   |
+| :----:            |    :----:         |     :----:    |
+|       T           |       T           |       T       |
+|       T           |       F           |       F       |
+|       F           |       T           |       T       |
+|       F           |       F           |       T       |
+
+'Biconditional' Expression Truth Table
+
+| Left Expression     | Right Expression    | Truth State   |
+| :----:            |    :----:         |     :----:    |
+|       T           |       T           |       T       |
+|       T           |       F           |       F       |
+|       F           |       T           |       F       |
+|       F           |       F           |       T       |
+
+'Or' Expression Truth Table
+
+| Left Expression     | Right Expression    | Truth State   |
+| :----:            |    :----:         |     :----:    |
+|       T           |       T           |       T       |
+|       T           |       F           |       T       |
+|       F           |       T           |       T       |
+|       F           |       F           |       F       |
+
+'Not' Expression Truth Table
+
+|  Expression       | Truth State   |
+| :----:            |    :----:     | 
+|       T           |       F       |   
+|       F           |       T       |   
+
