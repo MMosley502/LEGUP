@@ -24,72 +24,72 @@ In order to complete a proof in this Puzzle, you will change the undetermined tr
 
 # LEGUP Proof rules
 
-## Case rules
+## Case Rules
 
-### **And** Case
+### AND Case
 
 [![Hn3jig4.jpg](https://iili.io/Hn3jig4.jpg)](https://freeimage.host/)
 
 Use this case on a known 'And' to create a split in the branch where the surronding expressions will satisfy the condition
 
-### **Atomic** Case
+### Atomic Case
 
 [![Hn3w9qb.jpg](https://iili.io/Hn3w9qb.jpg)](https://freeimage.host/)
 
 Use this case on a unknown variable to create a split in the branch where the variable is true in one branch, and false in another
 
-### **Biconditional** Case
+### Biconditional Case
 
 [![Hn3wqI1.jpg](https://iili.io/Hn3wqI1.jpg)](https://freeimage.host/)
 
 Use this case on a known 'Biconditional' to create a split in the branch where the surronding expressions will satisfy the condition
 
-### **Conditional** Case
+### Conditional Case
 
 [![Hn3w7It.jpg](https://iili.io/Hn3w7It.jpg)](https://freeimage.host/)
 
 Use this case on a known 'Conditional' to create a split in the branch where the surronding expressions will satisfy the condition
 
-### **Or** Case
+### OR Case
 
 [![Hn3wVv2.jpg](https://iili.io/Hn3wVv2.jpg)](https://freeimage.host/)
 
 Use this case on a known 'Or' to create a split in the branch where the surronding expressions will satisfy the condition
 
 
-## Contradiction rules
+## Contradiction Rules
 
-### **And** Contradiction
+### AND Contradiction
 
 [![Hn3jTb9.jpg](https://iili.io/Hn3jTb9.jpg)](https://freeimage.host/)
 
 Use this rule to end a line of reasoning if the value of the 'And' is incorrect based on the surronding expressions
 
-### **Variable** Contradiction
+### Variable Contradiction
 
 [![Hn3ja0x.jpg](https://iili.io/Hn3ja0x.jpg)](https://freeimage.host/)
 
 Use this rule to end a line of reasoning if the value a variable in two locations has two different states
 
-### **Biconditional** Contradiction
+### Biconditional Contradiction
 
 [![Hn3ja0x.jpg](https://iili.io/Hn3ja0x.jpg)](https://freeimage.host/)
 
 Use this rule to end a line of reasoning if the value of the 'Bicondtional' is incorrect based on the surronding expressions
 
-### **Conditional** Contradiction
+### Conditional Contradiction
 
 [![Hn3jEOP.jpg](https://iili.io/Hn3jEOP.jpg)](https://freeimage.host/)
 
 Use this rule to end a line of reasoning if the value of the 'Condtional' is incorrect based on the surronding expressions
 
-### **Negation** Contradiction
+### NOT Contradiction
 
 [![Hn3jw0v.jpg](https://iili.io/Hn3jw0v.jpg)](https://freeimage.host/)
 
 Use this rule to end a line of reasoning if the value of the 'Not' is incorrect based on the surronding expression
 
-### **Or** Contradiction
+### OR Contradiction
 
 [![Hn3jveI.jpg](https://iili.io/Hn3jveI.jpg)](https://freeimage.host/)
 
@@ -104,61 +104,61 @@ Use this rule to end a line of reasoning if the value of the 'Or' is incorrect b
 
 The same variable must hold it's truth value in all cases, Use this rule to assign all of a given variable the same value
 
-### **And** Elimination
+### AND Elimination
 
 [![Hn3hnu1.jpg](https://iili.io/Hn3hnu1.jpg)](https://freeimage.host/)
 
 Use this rule to assign an expression a truth value depending on the 'And' State
 
-### **Biconditional** Elimination 
+### Biconditional Elimination 
 
 [![Hn3h5ap.jpg](https://iili.io/Hn3h5ap.jpg)](https://freeimage.host/)
 
 Use this rule to assign an expression a truth value depending on the 'Biconditional'  State
 
-### **Conditional** Elimination 
+### Conditional Elimination 
 
 [![Hn3h5ap.jpg](https://iili.io/Hn3h5ap.jpg)](https://freeimage.host/)
 
 Use this rule to assign an expression a truth value depending on the 'Conditional' State
 
-### **Not** Elimination 
+### NOT Elimination 
 
 [![Hn3h8Mb.jpg](https://iili.io/Hn3h8Mb.jpg)](https://freeimage.host/)
 
 Use this rule to assign an expression a truth value depending on the 'Not' State
 
-### **Or** Elimination 
+### OR Elimination 
 
 [![Hn3hSPj.jpg](https://iili.io/Hn3hSPj.jpg)](https://freeimage.host/)
 
 Use this rule to color an expression green or red depending on the 'conditional' State
 
-### **And** Introduction
+### AND Introduction
 
 [![Hn3hiAP.jpg](https://iili.io/Hn3hiAP.jpg)](https://freeimage.host/)
 
 Use this rule to Assign the 'And' a truth value on the the surronding expressions
 
-### **Biconditional** Introduction
+### Biconditional Introduction
 
 [![Hn3hLDF.jpg](https://iili.io/Hn3hLDF.jpg)](https://freeimage.host/)
 
 Use this rule to Assign the 'Bicontional' a truth value on the the surronding expressions
 
-### **Conditional** Introduction 
+### Conditional Introduction 
 
 [![Hn3hLDF.jpg](https://iili.io/Hn3hLDF.jpg)](https://freeimage.host/)
 
 Use this rule to Assign the 'Condtional' a truth value on the the surronding expressions
 
-### **Not** Introduction 
+### NOT Introduction 
 
 [![Hn3jFxn.jpg](https://iili.io/Hn3jFxn.jpg)](https://freeimage.host/)
 
 Use this rule to Assign the 'Not' a truth value on the the surronding expressions
 
-### **Or** Introduction 
+### OR Introduction 
 
 [![Hn3jFxn.jpg](https://iili.io/Hn3jFxn.jpg)](https://freeimage.host/)
 
@@ -168,7 +168,7 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 # Truth Table Rules
 ### Here are the basic rules of the puzzle
 
-**And** Expression Truth Table
+AND Expression Truth Table
 
 | Left Expression     | Right Expression    | Truth State   |
 | :----:            |    :----:         |     :----:    |
@@ -177,7 +177,7 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 |       F           |       T           |       F       |
 |       F           |       F           |       F       |
 
-**Conditional** Expression Truth Table
+Conditional Expression Truth Table
 
 | Left Expression     | Right Expression    | Truth State   |
 | :----:            |    :----:         |     :----:    |
@@ -186,7 +186,7 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 |       F           |       T           |       T       |
 |       F           |       F           |       T       |
 
-**Biconditional** Expression Truth Table
+Biconditional Expression Truth Table
 
 | Left Expression     | Right Expression    | Truth State   |
 | :----:            |    :----:         |     :----:    |
@@ -195,7 +195,7 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 |       F           |       T           |       F       |
 |       F           |       F           |       T       |
 
-**Or** Expression Truth Table
+OR Expression Truth Table
 
 | Left Expression     | Right Expression    | Truth State   |
 | :----:            |    :----:         |     :----:    |
@@ -204,7 +204,7 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 |       F           |       T           |       T       |
 |       F           |       F           |       F       |
 
-**Not** Expression Truth Table
+NOT Expression Truth Table
 
 |  Expression       | Truth State   |
 | :----:            |    :----:     | 
