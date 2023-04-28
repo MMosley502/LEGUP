@@ -419,7 +419,67 @@ public class NurikabeCell extends GridCell<Integer> {
 ```
 
 ## Implementing the Ability to Save Files
-Under construction, please come back later...
+Depending on the puzzle you may need to implement `setCell(int x, int y, Element e, MouseEvent m)` in its board class. To identify puzzles where it may be necessary you should check for additional puzzle class objects in the board class. In the example `ShortTruthTableBoard` below you can see that `ShortTruthTableStatement[] statements` needed to accounted for in the `setCell(int x, int y, Element e, MouseEvent m)` implementation. You can check the `createBoardElement()` function of the puzzle to help determine what needs to be accounted for.
+
+```java
+public class ShortTruthTableBoard extends GridBoard {
+
+    // setCell implementation necessary because of this object
+    // When cell is changed the statement that included it also needs to be changed
+    private ShortTruthTableStatement[] statements;
+
+    public ShortTruthTableBoard(int width, int height, ShortTruthTableStatement[] statements) {
+
+        super(width, height);
+
+        this.statements = statements;
+
+    }
+
+    /**
+     * Sets ShortTruthTable cell at position (x,y)
+     * @param x position on the x axis
+     * @param y position on the y axis
+     * @param e element to set the type of this ShortTruthTable cell to
+     */
+    @Override
+    public void setCell(int x, int y, Element e, MouseEvent m) {
+        System.out.println("Setting Cell");
+        if (e != null && y * dimension.width + x >= puzzleElements.size() || x >= dimension.width ||
+                y >= dimension.height || x < 0 || y < 0) {
+            return;
+        }
+        else {
+            if (e != null) {
+                puzzleElements.get(y * dimension.width + x).setType(e, m);
+                int count = 0;
+                for (ShortTruthTableStatement s : statements) {
+                    for (int i = 0; i < s.getLength(); i++) {
+                        if (s.getCell(i).getX() == x && s.getCell(i).getY() == y) {
+                            List<ShortTruthTableCell> cells = new ArrayList<ShortTruthTableCell>();
+                            // adds new cell to cell list
+                            for (int c = 0; c < s.getLength(); c++) {
+                                if (i == c) {
+                                    ShortTruthTableCell newC = new ShortTruthTableCell(s.getCell(i).getSymbol(), s.getCell(i).getType(), s.getCell(i).getLocation());
+                                    cells.add(newC);
+                                } else {
+                                    cells.add(s.getCell(c));
+                                }
+                            }
+
+                            // modifies StringRep
+                            String newS = s.getStringRep().substring(0, i) + cells.get(i).getSymbol() + s.getStringRep().substring(i + 1);
+                            // makes modified statement
+                            ShortTruthTableStatement temp = new ShortTruthTableStatement(newS, cells);
+                            statements[count] = temp;
+                        }
+                    }
+                    count++;
+                }
+            }
+        }
+    }
+```
 
 # End of Tutorial
 Congratulations! You now know the basics for how to implement puzzle editor functionality for a puzzle!
