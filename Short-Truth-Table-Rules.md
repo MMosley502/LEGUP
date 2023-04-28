@@ -169,8 +169,8 @@ Use this rule to Assign the 'Or' a truth value on the the surronding expressions
 Use this rule to Assign the 'Not' a truth value on the the surronding expressions
 
 
-# Truth Table Rules
-### Here are the basic rules of the puzzle
+# Truth Tables
+### These are the truth table configurations on which the LEGUP Rules are founded. Every LEGUP Rule logically follows from one or more of these truth tables.
 
 Biconditional (<-->) Expression Truth Table
 
